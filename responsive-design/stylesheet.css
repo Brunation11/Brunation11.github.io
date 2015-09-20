@@ -1,0 +1,131 @@
+/*Mobile*/
+  #wrapper {
+    width: 100%;
+  }
+  #side-a {
+    width: 100%;
+    text-align: center;
+
+  }
+  #side-a ul {
+    padding: 0px;
+    width: 100%;
+  }
+  #side-a ul li {
+    display: inline-block;
+    padding: 10px;
+  }
+  # a {
+    font-size: 1.5em;
+  }
+  #side-b {
+    width: 100%;
+  }
+  #content {
+    width: 100%;
+  }
+  #content p {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+}
+/*Tablet*/
+@media (min-width: 600px) {
+  #wrapper {
+    width: 100%;
+  }
+  #side-a {
+    width: 100%;
+    text-align: center;
+
+  }
+  #side-a ul {
+    padding: 0px;
+  }
+  #side-a ul li {
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 10px;
+  }
+  #side-b {
+    width: 100%;
+  }
+  #content {
+    width: 100%;
+  }
+  #content p {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+}
+
+/*Desktop*/
+@media (min-width: 768px) {
+  #wrapper {
+    width: 77.108434%;
+  }
+  #side-a {
+    width: 15.625%;
+  }
+  #side-b {
+    width: 15.625%;
+  }
+  #content {
+    width: 68%;
+  }
+}
+
+/* You'll want to make the site responsive and nice looking here. Have fun!*/
+
+#wrapper {
+  text-align: left;
+  margin: 0px auto;
+  padding: 0px;
+  border:0;
+  background: url("http://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-6-full.jpg") repeat;
+  color:black;
+}
+
+#side-a ul{
+  list-style-type:none;
+}
+
+a {
+  color:black;
+}
+
+#header {
+  margin: 0 0 15px 0;
+  background: black;
+  color: white;
+  font-size: 2em;
+}
+
+#side-a {
+  float: left;
+}
+
+#side-a li{
+  padding-top: 20px;
+}
+
+#side-b {
+  float: right;
+}
+
+#content {
+  float: left;
+}
+
+img {
+  width: 100%;
+}
+
+#footer {
+  clear: both;
+  background: #A2A2A2;
+}
+
+}
