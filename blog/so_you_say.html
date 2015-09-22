@@ -1,100 +1,131 @@
-<!DOCTYPE html>
-
-<html>
+<DOCTYPE html>
+<html lang="en">
   <head>
     <title>Bruno Zatta | Graphic & Web Designer</title>
-    <!--link type="text/css" rel="stylesheet" href="style.css"-->
-
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+    <meta name="description" content="Personal portfolio site of Bruno Zatta, Graphic & Web Designer">
+    <meta name="viewport" width="device-width, initial-scale=1.0">
     <meta charset="UTF-8">
   </head>
 
-  <body>
-
-    <!--The logo and page tagline go here-->
-
+<!--logo and page tagline-->
     <header class="main-header">
-      <div id="logo">
-        <a href="../index.html">
-          <img src="../imgs/bz-13-logo.png" alt=""/>
-        </a>
+      <div class="row">
+        <div class="col-1 col-offset-2 img">
+          <a href="../index.html"><img id="black" src="../imgs/bz-13-logo-full-size.png" alt=""/></a>
+          <a href="../index.html"><img id="white" src="../imgs/bz-13-logo-full-size-inverse.png" alt=""/></a>
+        </div>
+        <div class="col-9">
+          <h1>Part-time Designer, Full-time <span>Creative.</span></h1>
+        </div>
       </div>
-      <h1>Here goes the tagline</h1>
     </header>
 
-    <!--Sidebr containing main nav and social media links-->
+<!--sidebar and main content-->
+    <div class="row sidebar-main">
+<!--main-nav and social media-->
+      <div class="col-3 col-offset-1 sidebar">
+<!--main-nav-->
+        <nav class="main-nav">
+          <h1 class="hidden">Main Navigation</h1>
+          <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+<!--social media-->
+        <section class="social-media">
+          <header class="hidden">
+            <h1 class="hidden">Stalk Bruno Zatta</h1>
+          </header>
+          <ul>
+            <li><a href="https://github.com/Brunation11"><img src="../imgs/github-icon.png" alt="GitHub"/></a></li>
+            <li><a href="https://www.linkedin.com/pub/bruno-zatta/83/973/865"><img src="../imgs/linkedin-icon.png" alt="LinkedIn"/></a></li>
+            <li><a href="https://twitter.com/brunation11"><img src="../imgs/twitter-icon.png" alt="Twitter"/></a></li>
+          </ul>
+        </section>
+<!--In Progress-->
+        <section class="projects">
+          <header class="projects-header">
+            <h2>Currently Working On</h2>
+          </header>
+          <ul>
+            <li>current project</li>
+            <a href="#">Read About It</a>
+            <li>current project</li>
+            <a href="#">Read About It</a>
+          </ul>
+        </section>
+<!--Planned Projects-->
+        <section class="projects">
+          <header class="projects-header">
+            <h2>Future Projects</h2>
+          </header>
+          <ul>
+            <li>planned project</li>
+            <a href="#">Read About It</a>
+            <li>planned project</li>
+            <a href="#">Read About It</a>
+          </ul>
+        </section>
+      </div>
+<!--Main content for the page. Contains all blog posts-->
+      <div class="col-7">
+        <main>
+          <section class="content">
+            <article class="blog-post">
+              <header class="blog-header">
+                <h1>So you say you want to be a "Dev"?</h1>
+                <h2>Surviving the first week of Phase-0</h2>
+                <time class="date" datetime="2015-09-09">September 09, 2015</time>
+              </header>
+              <p>Let me start off by saying that a few short hours ago I wouldn’t have given Version Control, VC for short, the time of day. After creating a new repo in my home path two days ago, running my bash profile through the wood chipper TWICE yesterday because that new repo changed what my shell prompt looked like, and deleting and recreating my repos on GitHub multiple times today because I'm just too stubborn for my own good, I've decided to give into the process.</p>
 
-    <div class="sidebar">
+              <p>Maybe you're reading this and asking yourself "What is this guy talking about?" If you are, don’t worry it was only two days ago that I was asking myself the very same thing. So what am I talking about? Version Control of course! VC is a system of recording changes to a file or files as you’re working so that you can recall specific versions later. I read this analogy in one of the resources from an earlier challenge. Imagine being able to make as many copies of yourself as you want, and each of these versions exists in a parallel universe all at the same time. Now wait for it… This is where it gets good... Now imagine that in each of these parallel universes, all existing at the same time, you could act out your life however you'd like until you decide it was perfect, and if you for some reason decide that one of your other selves from another parallel universe was somehow better now you could choose that one instead. Version Control, it's that simple and it’s how I’m surviving my first week!</p>
 
-    <!--Main navigation for page-->
+              <p>If VC is starting to make a little bit of sense now then congratulations, you now know as much as I do and in record time! I don't know about you, but there was definitely a celebration dance here when I had that "aha!" moment. Now where does one get a fancy Version Control System, or VCS? Well here in Phase-0 we've been introduced to git a VCS that we've been learning to use directly in the Terminal. Yes that’s right, they have us working in the super scary black box and guess what, it's awesome!</p>
 
-      <nav class="main-nav">
-        <h1 class="hidden">Main Navigation</h1>
-        <ul>
-          <li><a href="#">Projects</a></li>
-          <li><a href="index.html">Blog</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><img src="../imgs/phone-icon.png" alt=""/>  973-420-4554</li>
-          <li><img src="../imgs/email-icon.png" alt=""/>  bzatta@gmail.com</li>
-        </ul>
-      </nav>
+              <p>So what makes git so special? To put it simply, git has a very unique way of how it thinks and processes information and it can help you keep track of all your changes. Every time you decide to save your progress you do so through something called a commit. When you commit, git creates a snapshot of your workspace and everything in it. This is where git stands out from the crowd. Even though it creates a snapshot of everything in your workspace, it only saves the changes you’ve made. If a file or directory hasn’t been modified, git will simply link it to the previous identical copy it has stored. Think of these commits as checkpoints in a video game, you wouldn’t want to continue too far ahead of your last checkpoint because you risk losing all those fancy new experience points your character just earned. I know I know; the shear thought of it gives me chills too!</p>
 
-    <!--Social media links-->
+              <p>We understand now how version control can help us while we work locally on our computers, but if we want to collaborate on projects? Don’t worry DBC is one step ahead, this week in Phase-0 we’re also learning about GitHub! GitHub is the largest host of git repositories. On your computer you have a folder where all your work is being stored. A repository is where you would store all your work remotely, meaning its online, on Github more specifically, where you can share it and collaborate with millions of other developers all over the world. Gone are the days of passing the flash drive around! With Github you can store your code remotely, and even work with entire teams on a project.</p>
 
-      <nav class="social-nav">
-        <h1>Stalk Bruno Zatta</h1>
-        <ul>
-          <li><a href="https://github.com/Brunation11"><img src="../imgs/github-icon.png" alt="GitHub"/></a></li>
-          <li><a href="https://www.linkedin.com/pub/bruno-zatta/83/973/865"><img src="../imgs/linkedin-icon.png" alt="LinkedIn"/></a></li>
-          <li><a href="https://twitter.com/brunation11"><img src="../imgs/twitter-icon.png" alt="Twitter"/></a></li>
-        </ul>
-      </nav>
+              <p>I know what you’re thinking, exciting stuff right? Github let’s you create your own repository that you can later clone or grab your own copy of someone else’s project if they’ve made it available to you. If you decide to do the latter you do so through something called forking, meaning you now have your very own copy of that repo that you can work on without affecting the original work. Whether you choose to create your own repo to store your code or fork someone else’s, GitHub makes it easy to connect share and collaborate.</p>
+
+              <p>It’s been an intense, frustrating, downright epic first week and it’s great to know that we have a Cohort of supportive individuals right there with us. So this is how I’ve surviving my first week of Phase-0 and I can’t wait to see what comes next!</p>
+              <footer>
+                <a href="index.html">Checkout Other Posts</a>
+              </footer>
+            </article>
+          </section>
+        </main>
+      </div>
     </div>
 
-    <!--Main content for the page. Contains content area-->
-
-    <main>
-
-    <!--Blog post-->
-
-      <article class="blog-post">
-        <header class="blog-header">
-          <h1>So you say you want to be a Dev?</h1>
-          <h2>How I'm surviving the first week of Phase-0</h2>
-          <time datetime="2015-09-09">September 09, 2015</time>
-        </header>
-        <p>
-          Let me start off by saying that a few short hours ago I wouldn’t have given Version Control, VC for short, the time of day. After creating a new repo in my home path two days ago, running my bash profile through the wood chipper TWICE yesterday because that new repo changed what my shell prompt looked like, and deleting and recreating my repos on GitHub multiple times today because I'm just too stubborn for my own good, I've decided to give into the process.
-        </p>
-        <p>
-          Maybe you're reading this and asking yourself "What is this guy talking about?" If you are, don’t worry it was only two days ago that I was asking myself the very same thing. So what am I talking about? Version Control of course! VC is a system of recording changes to a file or files as you’re working so that you can recall specific versions later. I read this analogy in one of the resources from an earlier challenge. Imagine being able to make as many copies of yourself as you want, and each of these versions exists in a parallel universe all at the same time. Now wait for it… This is where it gets good... Now imagine that in each of these parallel universes, all existing at the same time, you could act out your life however you'd like until you decide it was perfect, and if you for some reason decide that one of your other selves from another parallel universe was somehow better now you could choose that one instead. Version Control, it's that simple and it’s how I’m surviving my first week!
-        </p>
-        <p>
-          If VC is starting to make a little bit of sense now then congratulations, you now know as much as I do and in record time! I don't know about you, but there was definitely a celebration dance here when I had that "aha!" moment. Now where does one get a fancy Version Control System, or VCS? Well here in Phase-0 we've been introduced to git a VCS that we've been learning to use directly in the Terminal. Yes that’s right, they have us working in the super scary black box and guess what, it's awesome!
-        </p>
-        <p>
-          So what makes git so special? To put it simply, git has a very unique way of how it thinks and processes information and it can help you keep track of all your changes. Every time you decide to save your progress you do so through something called a commit. When you commit, git creates a snapshot of your workspace and everything in it. This is where git stands out from the crowd. Even though it creates a snapshot of everything in your workspace, it only saves the changes you’ve made. If a file or directory hasn’t been modified, git will simply link it to the previous identical copy it has stored. Think of these commits as checkpoints in a video game, you wouldn’t want to continue too far ahead of your last checkpoint because you risk losing all those fancy new experience points your character just earned. I know I know; the shear thought of it gives me chills too!
-        </p>
-        <p>
-          We understand now how version control can help us while we work locally on our computers, but if we want to collaborate on projects? Don’t worry DBC is one step ahead, this week in Phase-0 we’re also learning about GitHub! GitHub is the largest host of git repositories. On your computer you have a folder where all your work is being stored. A repository is where you would store all your work remotely, meaning its online, on Github more specifically, where you can share it and collaborate with millions of other developers all over the world. Gone are the days of passing the flash drive around! With Github you can store your code remotely, and even work with entire teams on a project.
-        </p>
-         <p>
-           I know what you’re thinking, exciting stuff right? Github let’s you create your own repository that you can later clone or grab your own copy of someone else’s project if they’ve made it available to you. If you decide to do the latter you do so through something called forking, meaning you now have your very own copy of that repo that you can work on without affecting the original work. Whether you choose to create your own repo to store your code or fork someone else’s, GitHub makes it easy to connect share and collaborate.
-         </p>
-         <p>
-           It’s been an intense, frustrating, downright epic first week and it’s great to know that we have a Cohort of supportive individuals right there with us. So this is how I’ve surviving my first week of Phase-0 and I can’t wait to see what comes next!
-              </p>
-      </Article>
-
-    </main>
-
-    <!--Main footer for page-->
-
+<!--footer-->
     <footer class="main-footer">
-      <h1>Call to action</h1>
-      <p>Bruno Zatta 13 Designs 2015</p>
+      <div class="row">
+        <div class="col-12">
+          <nav class="footer-nav">
+            <h1 class="hidden">Main Navigation</h1>
+            <ul>
+              <li><a href="#">Projects</a></li>
+              <li><a href="index.html">Blog</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <section class="copright">
+            <p>© 2015 Bruno Zatta</p>
+          </section>
+        </div>
+      </div>
     </footer>
-
   </body>
 </html>
+
+
+
 

@@ -1,109 +1,136 @@
-<!DOCTYPE html>
-
-<html>
+<DOCTYPE html>
+<html lang="en">
   <head>
     <title>Bruno Zatta | Graphic & Web Designer</title>
-    <!--link type="text/css" rel="stylesheet" href="style.css"-->
+    <link type="text/css" rel="stylesheet" href="stylesheets/default.css">
+    <meta name="description" content="Personal portfolio site of Bruno Zatta, Graphic & Web Designer">
+    <meta name="viewport" width="device-width, initial-scale=1.0">
     <meta charset="UTF-8">
   </head>
 
   <body>
-
-    <!--The logo and page tagline go here-->
-
+<!--logo and page tagline-->
     <header class="main-header">
-      <div id="logo">
-        <a href="index.html">
-          <img src="imgs/bz-13-logo.png" alt=""/>
-        </a>
+      <div class="row">
+        <div class="col-1 col-offset-2 img">
+          <a href="index.html"><img id="black" src="imgs/bz-13-logo-full-size.png" alt=""/></a>
+          <a href="index.html"><img id="white" src="imgs/bz-13-logo-full-size-inverse.png" alt=""/></a>
+        </div>
+        <div class="col-9">
+          <h1>Part-time Designer, Full-time <span>Creative.</span></h1>
+        </div>
       </div>
-      <h1>Here goes the tagline</h1>
     </header>
-
-    <!--Sidebr containing main nav and social media links-->
-
-    <div class="sidebar">
-
-    <!--Main navigation for page-->
-
-      <nav class="main-nav">
-        <h1 class="hidden">Main Navigation</h1>
-        <ul>
-          <li><a href="#">Projects</a></li>
-          <li><a href="blog/index.html">Blog</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><img src="imgs/phone-icon.png" alt=""/>  973-420-4554</li>
-          <li><img src="imgs/email-icon.png" alt=""/>  bzatta@gmail.com</li>
-        </ul>
-      </nav>
-
-    <!--Social media links-->
-
-      <nav class="social-nav">
-        <h1>Stalk Bruno Zatta</h1>
-        <ul>
-          <li><a href="https://github.com/Brunation11"><img src="imgs/github-icon.png" alt="GitHub"/></a></li>
-          <li><a href="https://www.linkedin.com/pub/bruno-zatta/83/973/865"><img src="imgs/linkedin-icon.png" alt="LinkedIn"/></a></li>
-          <li><a href="https://twitter.com/brunation11"><img src="imgs/twitter-icon.png" alt="Twitter"/></a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <!--Main content for the page. Contains jumbotron and content area-->
-
-    <main>
-
-    <!--Jumobotron for the page-->
-
-      <section class="featured">
-        <header class="featured-header">
-          <h1>I'm Bruno Zatta</h1>
-        </header>
-        <p>and I'm a graphic and web designer, based in Manhattan.</p>
-      </section>
-
-    <!--Content section containing featured project and featured blog post-->
-
-      <section class="content">
-        <h1 class="hidden">Featured Content</h1>
-
-    <!--Featured project-->
-
-        <section class="featured-content">
-          <header class="featured-content-header">
-            <h2>Featured Project</h2>
+<!--sidebar and main content-->
+    <div class="row sidebar-main">
+<!--main-nav and social media-->
+      <div class="col-3 col-offset-1 sidebar">
+<!--main-nav-->
+        <nav class="main-nav">
+          <h1 class="hidden">Main Navigation</h1>
+          <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="blog/index.html">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+<!--social media-->
+        <section class="social-media">
+          <header class="hidden">
+            <h1 class="hidden">Stalk Bruno Zatta</h1>
           </header>
-          <a href="#">See The Full Project</a>
+          <ul>
+            <li><a href="https://github.com/Brunation11"><img src="imgs/github-icon.png" alt="GitHub"/></a></li>
+            <li><a href="https://www.linkedin.com/pub/bruno-zatta/83/973/865"><img src="imgs/linkedin-icon.png" alt="LinkedIn"/></a></li>
+            <li><a href="https://twitter.com/brunation11"><img src="imgs/twitter-icon.png" alt="Twitter"/></a></li>
+          </ul>
         </section>
-
-    <!--featured blog post-->
-
-        <section class="featured-content">
-          <header class="featured-content-header">
-            <h2>Featured Blog Post</h2>
-            <p>Blog sub-header</p>
+<!--In Progress-->
+        <section class="projects">
+          <header class="projects-header">
+            <h2>Currently Working On</h2>
           </header>
-          <a href="blog/so_you_say.html">Continue Reading</a>
+          <ul>
+            <li>current project</li>
+            <a href="#">Read About It</a>
+            <li>current project</li>
+            <a href="#">Read About It</a>
+          </ul>
         </section>
-
-      </section>
-
-    </main>
-
-    <!--Banner section-->
-
-    <div class="banner">
-      <div class="container">
+<!--Planned Projects-->
+        <section class="projects">
+          <header class="projects-header">
+            <h2>Future Projects</h2>
+          </header>
+          <ul>
+            <li>planned project</li>
+            <a href="#">Read About It</a>
+            <li>planned project</li>
+            <a href="#">Read About It</a>
+          </ul>
+        </section>
+      </div>
+<!--Main content for the page. Contains jumbotron and content area-->
+      <div class="col-7">
+        <main>
+<!--jumbotron-->
+          <section class="featured">
+            <header class="featured-header">
+              <h1>I'm Bruno Zatta</h1>
+            </header>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam modi excepturi veritatis, dolores natus odit nostrum odio totam unde sequi.</p>
+          </section>
+<!--content-->
+          <section class="content">
+            <h1 class="hidden">Featured Content</h1>
+<!--featured project-->
+            <section class="featured-content">
+              <header class="featured-content-header">
+                <h2>Featured Project</h2>
+              </header>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore minus debitis omnis nobis obcaecati id itaque perferendis ex officiis numquam!</p>
+              <a href="#">See The Full Project</a>
+            </section>
+<!--featured blog post-->
+            <section class="featured-content">
+              <header class="blog-header">
+                <h1>So you say you want to be a "Dev"?</h1>
+                <h2>Surviving the first week of Phase-0</h2>
+                <time class="date" datetime="2015-09-09">September 09, 2015</time>
+              </header>
+              <p>Let me start off by saying that a few short hours ago I wouldn’t have given Version Control, VC for short, the time of day. After creating a new repo in my home path two days ago, running my bash profile through the wood chipper TWICE yesterday because that new repo changed what my shell prompt looked like, and deleting and recreating my repos on GitHub multiple times today because I'm just too stubborn for my own good, I've decided to give into the process.</p>
+              <a href="blog/so_you_say.html">Read the Full Post</a>
+            </section>
+          </section>
+        </main>
       </div>
     </div>
-
-    <!--Main footer for page-->
-
+<!--banner-->
+  <section class="banner">
+    <div class="row">
+      <div class="col-12">
+      </div>
+    </div>
+  </section>
+<!--footer-->
     <footer class="main-footer">
-      <h1>Call to action</h1>
-      <p>Bruno Zatta 13 Designs 2015</p>
+      <div class="row">
+        <div class="col-12">
+          <nav class="footer-nav">
+            <h1 class="hidden">Main Navigation</h1>
+            <ul>
+              <li><a href="#">Projects</a></li>
+              <li><a href="blog/index.html">Blog</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <section class="copright">
+            <p>© 2015 Bruno Zatta</p>
+          </section>
+        </div>
+      </div>
     </footer>
-
   </body>
 </html>
