@@ -82,7 +82,7 @@ main-nav
 }
 
 .main-nav li:hover {
-  background-color: #000;
+  background-color: #fff;
 }
 
 .main-nav a {
@@ -90,6 +90,17 @@ main-nav
   text-decoration: none;
 }
 
+.main-nav a:hover {
+  color: #00AEEF;
+}
+
+.main-nav .current {
+  background: #fff;
+}
+
+.main-nav .current a {
+  color: #00AEEF;
+}
 /*******************
 social-media
 ********************/
@@ -330,9 +341,9 @@ main-header
 ********************/
   .main-header {
     text-align: center;
-    height: 4em;
+    height: 44.1em;
     margin: 0;
-    border-bottom: .25em solid #00AEEF;
+    border-bottom: .60em solid #00AEEF;
   }
 
   .main-header .img {
@@ -340,8 +351,8 @@ main-header
   }
 
   .main-header .img img {
-    width: 80%;
-    margin: -1em;
+    width: 50%;
+    margin: -6em;
   }
 
   #black {
@@ -353,8 +364,43 @@ main-header
   }
 
   .main-header h1 {
-    padding-top: .5em;
     border-top: none;
+    font-size: 1.50em;
+    padding: 0;
+  }
+
+
+/********************
+main-nav
+********************/
+  .main-nav {
+    background: none;
+    margin: 0;
+  }
+
+  .main-nav ul {
+    font-size: .79em;
+  }
+
+  .main-nav li {
+    display: inline;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+
+  .main-nav a {
+    padding: .5em 1em .5em 1em;
+  }
+
+  .nav-arrow {
+    display: inline-block;
+    margin: 0 auto;
+    width: 18%;
+  }
+
+  .nav-arrow img {
+    margin: -1em;
+    padding: 0;
   }
 
 /********************
@@ -365,12 +411,6 @@ sidebar
     margin-top: 1.25em;
   }
 
-/********************
-main-nav
-********************/
-  .main-nav ul {
-    font-size: 1em;
-  }
 /********************
 social-media
 ********************/
