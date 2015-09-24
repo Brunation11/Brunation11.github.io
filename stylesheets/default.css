@@ -18,7 +18,8 @@ mobile-first
 html, body {
   margin: 0;
   padding: 0;
-  font-family: Verdana, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
   background: #F2F2F2;
 }
 
@@ -57,6 +58,11 @@ main-header
 
 .main-header span {
   color: #00AEEF;
+}
+
+.main-header span:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 /********************
@@ -399,12 +405,15 @@ main-nav
   .nav-arrow {
     display: inline-block;
     margin: 0 auto;
-    width: 18%;
+    border: 1px solid none;
+    border-radius: 50%;
   }
 
   .nav-arrow img {
     margin: -1em;
-    padding: 0;
+    padding: .5em;
+    width: 6em;
+    height: 6em;
   }
 
 /********************
