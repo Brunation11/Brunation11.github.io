@@ -369,6 +369,10 @@ main-header
     padding: 0;
   }
 
+  .main-header span {
+    color: #00AEEF;
+    font-size: 1.75em;
+  }
 
 /********************
 main-nav
