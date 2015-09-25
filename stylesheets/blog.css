@@ -24,6 +24,16 @@ blog post
   padding: .5em 1em .5em 1em;
 }
 
+#box-model-content {
+  border: 1px dashed #323232;
+}
+
+#box-model-border {
+  margin: 0 -2em 0 -2em;
+  padding: 2em;
+  border: 1px solid #323232;
+}
+
 /********************
 desktop
 ********************/
