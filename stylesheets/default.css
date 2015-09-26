@@ -41,7 +41,7 @@ main-header
 
 .main-header img {
   width: 50%;
-  margin: 5em 0 5em 0;
+  margin: 5em 0;
 }
 
 #white {
@@ -51,7 +51,7 @@ main-header
 .main-header h1 {
   color: #fff;
   font-size: .87em;
-  padding: 1em 0 1em 0;
+  padding: 1em 0;
   margin: 0;
   border-top: .15em solid #00AEEF;
 }
@@ -82,7 +82,7 @@ main-nav
 }
 
 .main-nav li {
-  margin: .15em 0 .15em 0;
+  margin: .15em 0;
   padding: .25em;
   background-color: #00AEEF;
 }
@@ -117,7 +117,7 @@ social-media
 }
 
 .social-media ul {
-  padding: 3em 0 3em 0;
+  padding: 3em;
 }
 
 .social-media li {
@@ -125,7 +125,7 @@ social-media
 }
 
 .social-media a {
-  margin: 0 1.5em 0 1.5em;
+  margin: 0 1.5em;
 }
 
 .social-media img {
@@ -163,7 +163,7 @@ projects
   font-size: .75em;
   background: #00AEEF;
   color: #fff;
-  padding: .25em .5em .25em .5em;
+  padding: .25em .5em;
 }
 
 /*******************
@@ -217,7 +217,7 @@ content
   font-size: .75em;
   background: #00AEEF;
   color: #fff;
-  padding: .5em 1em .5em 1em;
+  padding: .5em 1em;
 }
 
 /********************
@@ -254,7 +254,7 @@ blog preview
   font-size: .75em;
   background: #00AEEF;
   color: #fff;
-  padding: .5em 1em .5em 1em;
+  padding: .5em 1em;
 }
 
 /********************
@@ -399,7 +399,7 @@ main-nav
   }
 
   .main-nav a {
-    padding: .5em 1em .5em 1em;
+    padding: .5em 1em;
   }
 
   .nav-arrow {
@@ -432,11 +432,11 @@ social-media
   }
 
   .social-media ul {
-    padding: 1em 0 1em 0;
+    padding: 1em 0;
   }
 
   .social-media a {
-    margin: 0 1em 0 1em;
+    margin: 0 1em;
   }
 
   .social-media img {
