@@ -30,7 +30,7 @@
             <h1 class="hidden">Main Navigation</h1>
             <ul>
               <li><a href="#">Projects</a></li>
-              <li class="current"><a href="index.html">Blog</a></li>
+              <li class="current"><a href="index.html#middle">Blog</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
@@ -43,6 +43,7 @@
         </div>
       </div>
     </header>
+
 <!--sidebar and main content-->
     <div class="row sidebar-main">
 <!--main-nav and social media-->
@@ -87,78 +88,47 @@
       <div class="col-7">
         <main id="middle">
           <section class="content">
-<!--
-            <article class="blog-preview">
-              <header class="blog-header">
-                <h1>      </h1>
-                <h2>      </h2>
-                <time class="date" datetime="2015-09-25">     </time>
-              </header>
-              <p>     </p>
-              <footer>
-                <a href="     #middle">Continue Reading</a>
-              </footer>
-            </article>
--->
-            <article class="blog-preview">
+            <article class="blog-post">
               <header class="blog-header">
                 <h1>The Container-Object Landscape</h1>
                 <h2>Arrays & Hashes</h2>
                 <time class="date" datetime="2015-09-30">September 30, 2015</time>
               </header>
               <p>As we progress further into phase-0 of DBC we've reach object oriented programming using Ruby. What a lot of you may not know is that programming does't only deal with objects on an individual bases but often with entire collections. We iterate through these collections, organizing them, specifying critieria for objects we want to retrieve or those we want to exclude. With so many possible operations, accessing all this information becomes key, pun intended. Don't worry if you didn't get it, you will by the end of this post.</p>
+
+              <p>In the Ruby programming language, these collections of information are stored in containers such as Arrays and Hashes. Sounds simlple enough right? Well, it is.</p>
+
+              <p>So first up lets take a look at our friend Array. Say we create a container called <b>favorite_languages_array</b> to store the names of our, well, favorite languages. All of the names we add to our container are always in a consistent order and we keep track of this order by their index. An index is a numerical value representing the objects position in a container. The main thing to keep in mind is that programming languages like to start counting from zero. So if we were to add three languages to our collection, language one would be our zeroeth language and language three would be our second language in the collection. So we would have three languages and their positions would be zero, one, and two. Our array might look something like this.</p>
+
+              <p style="text-align:center">favorite_languages_array = [ "ruby", "python", "c" ]</p>
+
+              <p>It's difficult to find reasons not to use an array, especially since it's purpose is to store objects, and it can actually store all kinds of objects, even other arrays. In our example, our languages will always be in their same position unless we explicitly move them or remove them.</p>
+
+              <p>Now that you've had a taste of arrays, it's almost dissapointing to say that hashes arent much different. Like arrays, they are also containers for objects the main difference being that objects in a hash are stored in pairs known as keys and values. Keys, get the pun now? The information stored in hashes are known as values and if you wanted to retrieve a specific value you would reference it's key. But enough with the super awesome keyboard ninja lingo, let's take a look at an example.</p>
+
+              <p style="text-align:center">favorite_languages_hash = { 0 => "ruby", 1 => "python", 2 => "c" }</p>
+
+              <p>If we were to to retrieve some information from our array and hash we would do using an index for our array and a key for our hash.</p>
+
+              <p style="text-align:center">puts favorite_languages_array[0]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ruby</p>
+
+              <p style="text-align:center">puts favorite_languages_hash[0]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ruby</p>
+
+              <p>As you can see, we used the index [0] for our array to get the zeroeth object. In our hash, we had assigned the value ruby to the key 0 so when we specified that key our hash returns the value associated with that pair. Even if we didn't use integers as keys, our hash would still return the value associated with the key we entered.</p>
+
+              <p>Each container has it's merits and pitfalls. Generally, arrays are your "go to" containers for storing objects. Like an array hashes are collections of objects, though you would typically use them to store complete strings along with a key identifier. Think of a dictionary, a word would be your key, and it's defination the value. So if we wanted to look up the definition of a word we would reference the word and it would present us with a definition.</p>
+
+              <p>Consider this just the start of your journey into arrays and hashes, in fact consider it mine as well. Like most everything in ruby, there is always more than one way to do something, and it's up to us to figure out which will do our code justice.</p>
+
               <footer>
-                <a href="arrays-hashes.html#middle">Continue Reading</a>
+                <a href="index.html#middle">Checkout Other Posts</a>
               </footer>
             </article>
-
-            <article class="blog-preview">
-              <header class="blog-header">
-                <h1>Unboxing The CSS Box Model</h1>
-                <h2>Padding, Borders, and Margins</h2>
-                <time class="date" datetime="2015-09-25">September 25, 2015</time>
-              </header>
-              <p>So it turns out that when timeboxing is suggested on a challenge it would be wise to listen. My journey into CSS was a roller-coaster of a time, it had it's ups and it had its downs but at the end of this week I'm excited to see all the possibilities that come with CSS.</p>
-              <footer>
-                <a href="css-concepts.html#middle">Continue Reading</a>
-              </footer>
-            </article>
-
-            <article class="blog-preview">
-              <header class="blog-header">
-                <h1>Chasing The Tangents</h1>
-                <h2>Exploring My Thinking Style</h2>
-                <time class="date" datetime="2015-09-24">September 24, 2015</time>
-              </header>
-              <p>So phase-0 has been everything I've expected it to be and more. I've been inspired, motivated, challenged and utterly defeated. I've found myself humbled by my peers and everything that we've been able to learn from one another. Frankly, I'm humbled by just how much I don't know... That isn't to say that I'm not enjoying the experience, on the contrary, in today's day and age it's difficult to find this kind of stimuli. I would even go as far as to say that my biggest struggle is in processing all the information that's been thrown at me. I go off on tangents about 90% of the time, no really that's not an exaggeration, but that's because for the first time in a long time I've found myself in an environment conducive to my style of thinking.</p>
-              <footer>
-                <a href="chasing-the-tangents.html#middle">Continue Reading</a>
-              </footer>
-            </article>
-
-            <article class="blog-preview">
-              <header class="blog-header">
-                <h1>So you say you want to be a "Dev"?</h1>
-                <h2>Surviving the first week of Phase-0</h2>
-                <time class="date" datetime="2015-09-09">September 09, 2015</time>
-              </header>
-              <p>Let me start off by saying that a few short hours ago I wouldn’t have given Version Control, VC for short, the time of day. After creating a new repo in my home path two days ago, running my bash profile through the wood chipper TWICE yesterday because that new repo changed what my shell prompt looked like, and deleting and recreating my repos on GitHub multiple times today because I'm just too stubborn for my own good, I've decided to give into the process.</p>
-              <footer class="blog-post-preview-footer">
-                <a href="so_you_say.html#middle">Continue Reading</a>
-              </footer>
-            </article>
-
           </section>
         </main>
       </div>
     </div>
-<!--banner-->
-  <section class="banner">
-    <div class="row">
-      <div class="col-12">
-      </div>
-    </div>
-  </section>
+
 <!--footer-->
     <footer class="main-footer">
       <div class="row">
@@ -167,7 +137,7 @@
             <h1 class="hidden">Main Navigation</h1>
             <ul>
               <li><a href="#">Projects</a></li>
-              <li><a href="index.html">Blog</a></li>
+              <li><a href="index.html#middle">Blog</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
