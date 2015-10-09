@@ -34,7 +34,7 @@
               <li><a href="#">Projects</a></li>
               <li><a href="blog/index.html#middle">Blog</a></li>
               <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li class="current"><a href="#">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -89,59 +89,16 @@
 <!--Main content for the page. Contains jumbotron and content area-->
       <div class="col-7">
         <main class="contact" id="middle">
-          <div id="contact-form" class="clearfix">
-            <h1>Get In Touch!</h1>
-            <h2>Fill out our super swanky HTML5 contact form below to get in touch with us! Please provide as much information as possible for us to help you with your enquiry :)</h2>
-
-            <?php
-            //init variables
-            $cf = array();
-            $sr = false;
-
-            if(isset($_SESSION['cf_returndata'])){
-              $cf = $_SESSION['cf_returndata'];
-              $sr = true;
-            }
-
-            <ul id="errors" class="<?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
-            <li id="info">There were some problems with your form submission:</li>
-            <?php
-
-            if(isset($cf['errors']) && count($cf['errors']) > 0) :
-              foreach($cf['errors'] as $error) :
-            ?>
-
-            <li><?php echo $error ?></li>
-
-            <?php
-              endforeach;
-              endif;
-            ?>
-            </ul>
-
-            <form method="post" action="process.php">
-
-              <input type="text" id="name" name="name" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['name'] : '' ?>" placeholder="John Doe" required autofocus />
-
-              <input type="email" id="email" name="email" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['email'] : '' ?>" placeholder="johndoe@example.com" required />
-
-              <!--
-              <label for="enquiry">Enquiry: </label>
-              <select id="enquiry" name="enquiry">
-              <option value="General" <?php echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['enquiry'] == 'General') ? "selected='selected'" : '' ?>>General</option>
-              <option value="Sales" <?php echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['enquiry'] == 'Sales') ? "selected='selected'" : '' ?>>Sales</option>
-              <option value="Support" <?php echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['enquiry'] == 'Support') ? "selected='selected'" : '' ?>>Support</option>
-              </select>
-              -->
-
-              <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required data-minlength="20"><?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['message'] : '' ?></textarea>
-
-              <span id="loading"></span>
-              <input type="submit" value="Holla!" id="submit-button" />
-            </form>
-
-            <?php unset($_SESSION['cf_returndata']); ?>
-          </div>
+          <section>
+            <h1>Hey!</h1>
+            <p>Believe it or not developers love to hear about your ideas so feel free to reach out. Whether you've got that creative itch that you just can't scratch, or just want to geek out and talk code, it's always awesome to hear from you guys!<p>
+          </section>
+          <form action="mail.php" method="POST">
+            <input id="name" type="text" name="name" placeholder="What should I call you?">
+            <input id="email" type="text" name="email" placeholder="Got an email? I promise not to share it!">
+            <textarea id="message" name="message" placeholder="What's on your mind?"></textarea><br />
+            <input class="button" type="submit" value="Send"><input class="button" type="reset" value="Clear">
+          </form>
         </main>
       </div>
     </div>
