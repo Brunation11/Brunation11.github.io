@@ -41,7 +41,7 @@ main-header
 
 .main-header img {
   width: 50%;
-  margin: 5em 0;
+  margin: 5rem 0;
 }
 
 #white {
@@ -50,10 +50,10 @@ main-header
 
 .main-header h1 {
   color: #fff;
-  font-size: .87em;
-  padding: 1em 0;
+  font-size: 1rem;
+  padding: 2.5rem 0;
   margin: 0;
-  border-top: .15em solid #00AEEF;
+  border-top: .5rem solid #00AEEF;
 }
 
 .main-header span {
@@ -75,15 +75,15 @@ main-nav
 }
 
 .main-nav ul {
-  font-size: 1.5em;
+  font-size: 1.25rem;
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
 .main-nav li {
-  margin: .15em 0;
-  padding: .25em;
+  margin: .5rem 0;
+  padding: .75rem;
   background-color: #00AEEF;
 }
 
@@ -113,11 +113,11 @@ social-media
 .social-media {
   width: 90%;
   margin: 0 auto;
-  margin-top: 3em;
+  margin-top: 3rem;
 }
 
 .social-media ul {
-  padding: 3em;
+  padding: 3rem;
 }
 
 .social-media li {
@@ -125,11 +125,11 @@ social-media
 }
 
 .social-media a {
-  margin: 0 1.5em;
+  margin: 0 3rem;
 }
 
 .social-media img {
-  width: 1.5em;
+  width: 4rem;
 }
 
 /*******************
@@ -140,7 +140,7 @@ projects
   width: 90%;
   background: #fff;
   margin: 0 auto;
-  padding: .5em 2em 2em 2em;
+  padding: .5rem 2rem 2rem 2rem;
 }
 
 .projects ul {
@@ -150,20 +150,20 @@ projects
 
 
 .projects-header {
-  font-size: .75em;
+  font-size: .75rem;
 }
 
 .projects li {
-  font-size: 1em;
-  margin: 1em;
+  font-size: 1rem;
+  margin: 2.5rem;
 }
 
 .projects a {
   text-decoration: none;
-  font-size: .75em;
+  font-size: .75rem;
   background: #00AEEF;
   color: #fff;
-  padding: .25em .5em;
+  padding: .75rem 1rem;
 }
 
 /*******************
@@ -177,75 +177,72 @@ main
   background: #fff;
 }
 
+.featured p,
+.featured-content p,
+.blog-preview p {
+  text-indent: 2rem;
+}
+
 /*******************
 featured
 ********************/
 .featured {
-  padding: .5em 2em 2em 2em;
+  padding: .5rem 2rem 2rem 2rem;
 }
 
 .featured-header {
-  font-size: 1em;
   text-align: center;
-}
-
-.featured p {
-  font-size: 1em;
 }
 
 /********************
 content
 *********************/
 .featured-content {
-  padding: .5em 2em 2em 2em;
+  padding: .5rem 2rem 2rem 2rem;
   text-align: center;
 }
 
 .featured-content-header {
-  font-size: 1em;
   text-align: left;
 }
 
 .featured-content p {
-  font-size: 1em;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
   text-align: left;
 }
 
 .featured-content a {
   text-decoration: none;
-  font-size: .75em;
+  font-size: .75rem;
   background: #00AEEF;
   color: #fff;
-  padding: .5em 1em;
+  padding: .75rem 1rem;
 }
 
 /********************
 blog preview
 *********************/
 .blog-preview {
-  padding: .5em 2em 2em 2em;
+  padding: .5rem 2rem 2rem 2rem;
   text-align: center;
 }
 
 .blog-header {
-  font-size: 1em;
   text-align: left;
 }
 
 .blog-header h2 {
-  font-size: .75em;
+  font-size: .75rem;
   text-align: left;
 }
 
 .date {
-  font-size: .65em;
+  font-size: .75rem;
   text-align: left;
 }
 
 .blog-preview p {
-  font-size: 1em;
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
   text-align: left;
 }
 
@@ -254,18 +251,18 @@ blog preview
   font-size: .75em;
   background: #00AEEF;
   color: #fff;
-  padding: .5em 1em;
+  padding: .75rem 1rem;
 }
 
 /********************
 footer
 ********************/
 .main-footer {
-  margin-top: 3em;
-  height: 50em;
+  margin-top: 3rem;
   clear: both;
-  border-top: 1em solid #00AEEF;
+  border-top: 1rem solid #00AEEF;
   background-color: #323232;
+  padding: 5rem;
 }
 
 /********************
@@ -273,8 +270,8 @@ footer-nav
 ********************/
 .footer-nav {
   text-align: center;
-  font-size: 2em;
-  margin-top: 5em;
+  font-size: 2rem;
+  margin-top: 5rem;
 }
 
 .footer-nav ul {
@@ -283,7 +280,7 @@ footer-nav
 }
 
 .footer-nav li {
-  padding: .25em;
+  padding: .25rem;
   display: inline;
 }
 
@@ -293,17 +290,48 @@ footer-nav
 }
 
 /********************
+footer logo
+********************/
+.main-footer img {
+  width: 100%;
+  margin-top: -5rem;
+  margin-bottom: -5rem;
+}
+
+/********************
 footer copyright
 ********************/
 .copright {
-  margin-top: 15em;
-  font-size: 1.5em;
+  font-size: .5rem;
   color: #fff;
   text-align: center;
 }
 
 
 
+.contact {
+  background: #fff;
+  padding: .5rem 2rem 2rem 2rem;
+}
+
+form {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+#name,
+#email,
+#message {
+  width: 50%;
+  border: none;
+  text-align: center;
+}
+
+#message {
+  height: 10rem;
+}
 
 
 /********************
@@ -347,9 +375,9 @@ main-header
 ********************/
   .main-header {
     text-align: center;
-    height: 44.1em;
+    height: 44.1rem;
     margin: 0;
-    border-bottom: .60em solid #00AEEF;
+    border-bottom: .60rem solid #00AEEF;
   }
 
   .main-header .img {
@@ -358,7 +386,7 @@ main-header
 
   .main-header .img img {
     width: 50%;
-    margin: -6em;
+    margin: -5.5rem;
   }
 
   #black {
@@ -371,13 +399,13 @@ main-header
 
   .main-header h1 {
     border-top: none;
-    font-size: 1.50em;
+    font-size: 1.5rem;
     padding: 0;
   }
 
   .main-header span {
     color: #00AEEF;
-    font-size: 1.75em;
+    font-size: 3rem;
   }
 
 /********************
@@ -389,7 +417,7 @@ main-nav
   }
 
   .main-nav ul {
-    font-size: .79em;
+    font-size: .75rem;
   }
 
   .main-nav li {
@@ -399,7 +427,7 @@ main-nav
   }
 
   .main-nav a {
-    padding: .5em 1em;
+    padding: .75rem 1rem;
   }
 
   .nav-arrow {
@@ -410,10 +438,10 @@ main-nav
   }
 
   .nav-arrow img {
-    margin: -1em;
-    padding: .5em;
-    width: 6em;
-    height: 6em;
+    margin: -1rem;
+    padding: .5rem;
+    width: 6rem;
+    height: 6rem;
   }
 
 /********************
@@ -421,7 +449,7 @@ sidebar
 ********************/
   .sidebar {
     background: #fff;
-    margin-top: 1.25em;
+    margin-top: 1.25rem;
   }
 
 /********************
@@ -432,15 +460,15 @@ social-media
   }
 
   .social-media ul {
-    padding: 1em 0;
+    padding: 0;
   }
 
   .social-media a {
-    margin: 0 1em;
+    margin: 0 1rem;
   }
 
   .social-media img {
-    width: 1em;
+    width: 1.5rem;
   }
 
 /*******************
@@ -455,7 +483,7 @@ projects
 main
 ********************/
   main {
-    margin-top: .25em;
+    margin-top: .25rem;
   }
 
 /*******************
@@ -472,30 +500,30 @@ blog-preview
 ********************/
 
   .blog-preview {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
   }
 
 /********************
 footer
 ********************/
   .main-footer {
-    margin-top: 3em;
-    height: 16em;
     clear: both;
-    border-top: 1em solid #00AEEF;
-    background-color: #323232;
+    border-top: .75rem solid #00AEEF;
+    padding: 0;
+    height: 20rem;
   }
+
 
 /********************
 footer-nav
 ********************/
   .footer-nav {
-    font-size: .75em;
-    margin-top: 2em;
+    font-size: .75rem;
+    margin-top: 2rem;
   }
 
   .footer-nav li {
-    padding: .5em;
+    padding: .5rem;
   }
 
 /********************
@@ -505,4 +533,14 @@ footer copyright
     font-size: .5em;
   }
 
+/********************
+footer logo
+********************/
+  .main-footer img {
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+  }
 }
+
+
+
