@@ -308,14 +308,26 @@ footer copyright
 }
 
 
-
+/********************
+Contact
+********************/
 .contact {
-  background: #fff;
   padding: .5rem 2rem 2rem 2rem;
+  margin: 0 auto;
+  background-color: #fff;
+  width: 90%;
+}
+
+.contact h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.contact p {
+  text-indent: 2rem;
 }
 
 form {
-  width: 100%;
   margin: 0 auto;
   text-align: center;
 
@@ -324,15 +336,29 @@ form {
 #name,
 #email,
 #message {
-  width: 50%;
+  width: 90%;
+  height: 5rem;
   border: none;
+  border-bottom: 1px solid #00AEEF;
   text-align: center;
+  font-size: 2rem;
+  background: none;
 }
+
 
 #message {
-  height: 10rem;
+  height: 20rem;
 }
 
+.button {
+  border: none;
+  margin: .5rem .25rem;
+  text-decoration: none;
+  font-size: .75em;
+  background: #00AEEF;
+  color: #fff;
+  padding: .75rem 1rem;
+}
 
 /********************
 desktop
@@ -540,6 +566,42 @@ footer logo
     margin-top: -2rem;
     margin-bottom: -2rem;
   }
+
+/********************
+Contact
+********************/
+  .contact {
+    margin-top: .4rem;
+    width: 100%;
+    background: url("../imgs/contact-bg.png");
+    background-size: auto 100%;
+  }
+
+  .contact h1 {
+    text-align: left;
+    padding-top: 1.5rem;
+    text-indent: 3rem;
+    font-size: 3rem;
+  }
+
+  .contact p {
+    text-indent: 0rem;
+    margin-left: 14rem;
+    font-size: 1rem;
+  }
+
+  #name,
+  #email,
+  #message {
+    height: 2rem;
+    font-size: .75rem;
+    width: 75%;
+  }
+
+  #message {
+    height: 10rem;
+  }
+
 }
 
 
