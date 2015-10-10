@@ -95,7 +95,18 @@
                 <h2></h2>
                 <time class="date" datetime="2015-09-09"></time>
               </header>
-              <p></p>
+              <p>So no joke, there I was, week-5 of DBC winding down and it seemed like it was only as week ago that we got started with Ruby. Of course that may just be because it was only one short week ago that we had our introduction to Ruby, a dynamic object oriented programming language.</p>
+
+              <p>Part of what gives this little language its charm though are the vast built in methods and what they can do for their respective classes. However not all classes are alike and inheritance tends to be limited to one parent class. It would be great to just be able to write code once and share it between unrelated classes, so great in fact that the it’s already possible thanks to special containers called modules. Modules are containers for methods and constants and allow these objects to be mixed in with other respective classes. <span class="ruby">Enumerable</span>, Ruby’s most useful module does just that.</p>
+
+              <p>By now we’ve covered <span class="ruby">Arrays</span> and <span class="ruby">Hashes</span>, and how they can help us store information. They each have their own methods for storing, deleting, and iterating through data, and thanks to modules they have the ability to use <span class="ruby">Enumerable</span> methods as well. Since <span class="ruby">Enumerable</span> is a module, its methods are able to mix in with other classes meaning that Rubyists like you and I don’t have to write the same methods all the time for each class. There is a catch though; while classes can access <span class="ruby">Enumerable</span> methods just by us telling them to include <span class="ruby">Enumerable</span>, it requires that the class first have an <span class="ruby">#each</span> method.</p>
+
+              <p>However you choose to stock up your Ruby arsenal, there is one <span class="ruby">Enumerable</span> method that stands out above the rest. The classes we’ve covered such as <span class="ruby">Array</span> and <span class="ruby">Hash</span> have their own versions of <span class="ruby">#each</span> that allow you to iterate through a container and perform some action on each object.</p>
+
+              <p class="ruby" style="text-align:center">[ 1, 2, 3 ].each { | n | n + 1 }</p>
+
+              <p>Seems simple enough right? Well, it is. <span class="ruby">#each</span> is a powerful method that allows us to iterate through  an <span class="ruby">Array</span> or <span class="ruby">Hash</span> and perform an action to each object like in the example above.</p>
+
               <footer>
                 <a href="index.html#middle">Checkout Other Posts</a>
               </footer>
@@ -122,7 +133,7 @@
       </div>
       <div class="row">
         <div class="col-2 col-offset-5">
-          <a href="../index.html"><img src="imgs/bz-13-logo-full-size-inverse.png" alt=""/></a>
+          <a href="../index.html"><img src="../imgs/bz-13-logo-full-size-inverse.png" alt=""/></a>
         </div>
       </div>
       <div class="row">

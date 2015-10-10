@@ -33,6 +33,12 @@ blog post
   border: 1px solid #323232;
 }
 
+.ruby {
+  border: 1px solid black;
+  background: #F2F2F2;
+  padding: .1rem .2rem;
+}
+
 /********************
 desktop
 ********************/

@@ -97,29 +97,29 @@
               </header>
               <p>As we progress further into phase-0 of DBC we've reach object oriented programming using Ruby. What a lot of you may not know is that programming does't only deal with objects on an individual bases but often with entire collections. We iterate through these collections, organizing them, specifying critieria for objects we want to retrieve or those we want to exclude. With so many possible operations, accessing all this information becomes key, pun intended. Don't worry if you didn't get it, you will by the end of this post.</p>
 
-              <p>In the Ruby programming language, these collections of information are stored in containers such as Arrays and Hashes. Sounds simlple enough right? Well, it is.</p>
+              <p>In the Ruby programming language, these collections of information are stored in containers such as <span class="ruby">Arrays</span> and <span class="ruby">Hashes</span>. Sounds simlple enough right? Well, it is.</p>
 
-              <p>So first up lets take a look at our friend Array. Say we create a container called <b>favorite_languages_array</b> to store the names of our, well, favorite languages. All of the names we add to our container are always in a consistent order and we keep track of this order by their index. An index is a numerical value representing the objects position in a container. The main thing to keep in mind is that programming languages like to start counting from zero. So if we were to add three languages to our collection, language one would be our zeroeth language and language three would be our second language in the collection. So we would have three languages and their positions would be zero, one, and two. Our array might look something like this.</p>
+              <p>So first up lets take a look at our friend <span class="ruby">Array</span>. Say we create a container called <b>favorite_languages_array</b> to store the names of our, well, favorite languages. All of the names we add to our container are always in a consistent order and we keep track of this order by their index. An index is a numerical value representing the objects position in a container. The main thing to keep in mind is that programming languages like to start counting from zero. So if we were to add three languages to our collection, language one would be our zeroeth language and language three would be our second language in the collection. So we would have three languages and their positions would be zero, one, and two. Our array might look something like this.</p>
 
-              <p style="text-align:center">favorite_languages_array = [ "ruby", "python", "c" ]</p>
+              <p class="ruby" style="text-align:center">favorite_languages_array = [ "ruby", "python", "c" ]</p>
 
-              <p>It's difficult to find reasons not to use an array, especially since it's purpose is to store objects, and it can actually store all kinds of objects, even other arrays. In our example, our languages will always be in their same position unless we explicitly move them or remove them.</p>
+              <p>It's difficult to find reasons not to use an <span class="ruby">Array</span>, especially since it's purpose is to store objects, and it can actually store all kinds of objects, even other arrays. In our example, our languages will always be in their same position unless we explicitly move them or remove them.</p>
 
-              <p>Now that you've had a taste of arrays, it's almost dissapointing to say that hashes arent much different. Like arrays, they are also containers for objects the main difference being that objects in a hash are stored in pairs known as keys and values. Keys, get the pun now? The information stored in hashes are known as values and if you wanted to retrieve a specific value you would reference it's key. But enough with the super awesome keyboard ninja lingo, let's take a look at an example.</p>
+              <p>Now that you've had a taste of arrays, it's almost dissapointing to say that a <span class="ruby">Hash</span> isn't much different. Like an <span class="ruby">Array</span>, they are also containers for objects the main difference being that objects in a <span class="ruby">Hash</span> are stored in pairs known as keys and values. Keys, get the pun now? The information stored in a <span class="ruby">Hash</span> is known as values and if you wanted to retrieve a specific value you would reference its key. But enough with the super awesome keyboard ninja lingo, let's take a look at an example.</p>
 
-              <p style="text-align:center">favorite_languages_hash = { 0 => "ruby", 1 => "python", 2 => "c" }</p>
+              <p class="ruby" style="text-align:center">favorite_languages_hash = { 0 => "ruby", 1 => "python", 2 => "c" }</p>
 
-              <p>If we were to to retrieve some information from our array and hash we would do using an index for our array and a key for our hash.</p>
+              <p>If we were to to retrieve some information from our <span class="ruby">Array</span> and <span class="ruby">Hash</span> we would do using an index for our <span class="ruby">Array</span> and a key for our <span class="ruby">Hash</span>>.</p>
 
-              <p style="text-align:center">puts favorite_languages_array[0]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ruby</p>
+              <p class="ruby" style="text-align:center">puts favorite_languages_array[0]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ruby</p>
 
-              <p style="text-align:center">puts favorite_languages_hash[0]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ruby</p>
+              <p class="ruby" style="text-align:center">puts favorite_languages_hash[0]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ruby</p>
 
-              <p>As you can see, we used the index [0] for our array to get the zeroeth object. In our hash, we had assigned the value ruby to the key 0 so when we specified that key our hash returns the value associated with that pair. Even if we didn't use integers as keys, our hash would still return the value associated with the key we entered.</p>
+              <p>As you can see, we used the index [0] for our <span class="ruby">Array</span> to get the zeroeth object. In our <span class="ruby">Hash</span>, we had assigned the value ruby to the key 0 so when we specified that key our hash returns the value associated with that pair. Even if we didn't use integers as keys, our <span class="ruby">Hash</span> would still return the value associated with the key we entered.</p>
 
-              <p>Each container has it's merits and pitfalls. Generally, arrays are your "go to" containers for storing objects. Like an array hashes are collections of objects, though you would typically use them to store complete strings along with a key identifier. Think of a dictionary, a word would be your key, and it's defination the value. So if we wanted to look up the definition of a word we would reference the word and it would present us with a definition.</p>
+              <p>Each container has it's merits and pitfalls. Generally, an <span class="ruby">Array</span> is your "go to" container for storing objects. Like an <span class="ruby">Array</span>, a <span class="ruby">Hash</span> is a collection of objects, though you would typically use one to store complete strings along with a key identifier. Think of a dictionary, a word would be your key, and it's defination the value. So if we wanted to look up the definition of a word we would reference the word and it would present us with a definition.</p>
 
-              <p>Consider this just the start of your journey into arrays and hashes, in fact consider it mine as well. Like most everything in ruby, there is always more than one way to do something, and it's up to us to figure out which will do our code justice.</p>
+              <p>Consider this just the start of your journey into Arrays and Hashes, in fact consider it mine as well. Like most everything in Ruby, there is always more than one way to do something, and it's up to us to figure out which will do our code justice.</p>
 
               <footer>
                 <a href="index.html#middle">Checkout Other Posts</a>
