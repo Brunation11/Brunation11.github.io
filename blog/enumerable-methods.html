@@ -1,0 +1,172 @@
+<DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bruno Zatta | Graphic & Web Designer</title>
+    <link rel="shortcut icon" href="../imgs/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+    <meta name="description" content="Personal portfolio site of Bruno Zatta, Graphic & Web Designer">
+    <meta name="viewport" width="device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+  </head>
+
+<!--logo and page tagline-->
+    <header class="main-header">
+      <div class="row">
+        <div class="col-12 img">
+          <a href="../index.html"><img id="black" src="../imgs/bz-13-logo-full-size.png" alt=""/></a>
+          <a href="../index.html"><img id="white" src="../imgs/bz-13-logo-full-size-inverse.png" alt=""/></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h1>Part-time Designer, Full-time <span>Creative.</span></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+<!--main-nav-->
+          <nav class="main-nav">
+            <h1 class="hidden">Main Navigation</h1>
+            <ul>
+              <li><a href="#">Projects</a></li>
+              <li class="current"><a href="index.html#middle">Blog</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="../contact.html#middle">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="row nav-arrow hidden">
+        <div class="col-12">
+          <a href="#middle"><img src="../imgs/navigation-arrow.png" alt=""/></a>
+        </div>
+      </div>
+    </header>
+
+<!--sidebar and main content-->
+    <div class="row sidebar-main">
+<!--main-nav and social media-->
+      <div class="col-3 col-offset-1 sidebar">
+<!--social media-->
+        <section class="social-media">
+          <header class="hidden">
+            <h1 class="hidden">Stalk Bruno Zatta</h1>
+          </header>
+          <ul>
+            <li><a href="mailto:bzatta@gmail.com"><img src="../imgs/email-icon.png" alt="bzatta@gmail.com"/></a></li>
+            <li><a href="https://github.com/Brunation11"><img src="../imgs/github-icon.png" alt="GitHub"/></a></li>
+            <li><a href="https://www.linkedin.com/pub/bruno-zatta/83/973/865"><img src="../imgs/linkedin-icon.png" alt="LinkedIn"/></a></li>
+            <li><a href="https://twitter.com/brunation11"><img src="../imgs/twitter-icon.png" alt="Twitter"/></a></li>
+          </ul>
+        </section>
+<!--In Progress-->
+        <section class="projects">
+          <header class="projects-header">
+            <h2>Currently Working On</h2>
+          </header>
+          <ul>
+            <li>current project</li>
+            <a href="#">Read About It</a>
+            <li>current project</li>
+            <a href="#">Read About It</a>
+          </ul>
+        </section>
+<!--Planned Projects-->
+        <section class="projects">
+          <header class="projects-header">
+            <h2>Future Projects</h2>
+          </header>
+          <ul>
+            <li>planned project</li>
+            <a href="#">Read About It</a>
+            <li>planned project</li>
+            <a href="#">Read About It</a>
+          </ul>
+        </section>
+      </div>
+<!--Main content for the page. Contains all blog posts-->
+      <div class="col-7">
+        <main id="middle">
+          <section class="content">
+            <article class="blog-post">
+              <header class="blog-header">
+                <h1>The Last Method You'll Ever Want to Use</h1>
+                <h2>A brief intro into Ruby Enumerable methods</h2>
+                <time class="date" datetime="2015-10-05">October 5, 2015</time>
+              </header>
+              <p>So no joke, there I was, week-5 of DBC winding down and it seemed like it was only a week ago that we got started with Ruby. Of course that may just be because it was only one short week ago that we had our introduction to Ruby.</p>
+
+              <p>Part of what gives this little language its charm though are the vast built in methods and what they can do for their respective classes. However not all classes are alike and inheritance tends to be limited to one parent class. It would be great to just be able to write code once and share it between unrelated classes, so great in fact that it’s already possible thanks to special containers called modules. Modules are containers for methods and constants and allow these objects to be mixed in with other respective classes. <span class="ruby">Enumerable</span>, Ruby’s most useful module does just that.</p>
+
+              <p>By now we’ve covered <span class="ruby">Arrays</span> and <span class="ruby">Hashes</span>, and how they can help us store information. They each have their own methods for storing, deleting, and iterating through data, and thanks to modules they have the ability to use <span class="ruby">Enumerable</span> methods as well. Since <span class="ruby">Enumerable</span> is a module, its methods are able to mix in with other classes meaning that Rubyists like you and I don’t have to write the same methods all the time for each class. There is a catch though; while classes can access <span class="ruby">Enumerable</span> methods just by us telling them to include <span class="ruby">Enumerable</span>, it requires that the class first have an <span class="ruby">#each</span> method. Basically we need the object in which we're calling an <span class="ruby">Enumerable</span> method on to first belong to a class that supports interating.</p>
+
+              <p>However you choose to stock up your Ruby arsenal, there are some <span class="ruby">Enumerable</span> methods that stand out above the rest, but first we need to understand how a more common iterator like <span class="ruby">#each</span> works. The classes we’ve covered such as <span class="ruby">Array</span> and <span class="ruby">Hash</span> have their own versions of <span class="ruby">#each</span> that allow you to iterate through a container and perform some action on each object.</p>
+
+              <p class="ruby" style="text-align:center">my_array = [ 1, 2, 3 ]<br>
+              my_array.each { | num | print "#{num}" }</p>
+
+              <p class="ruby" style="text-align:center">my_hash = { "Paul" => "male", "Ana" => "female", "Mike" => "male" }<br>
+              my_hash.each_pair { | name, gender | print "#{key} is a #{gender}" }</p>
+
+              <p>Seems simple enough right? Well, it is. <span class="ruby">#map</span> is a powerful method that allows us to iterate through  an <span class="ruby">Array</span> or <span class="ruby">Hash</span> and perform an action or simply print each object to the screen like in the example above.</p>
+
+              <p>While <span class="ruby">#each</span> does a nice job of iterating, <span class="ruby">Enumerable</span> gives us a few other methods with a bit more kick to them. Some of these include methods such as <span class="ruby">#map</span> and <span class="ruby">#select</span>.
+
+              <p><span class="ruby">#map</span> returns a new <span class="ruby">Array</span> with the results of running a block for each element. Think of it like e<span class="ruby">#each</span> but with the added bonus of returning a new <span class="ruby">Array</span> instead of modifying the original.</p>
+
+              <p class="ruby" style="text-align:center">my_array = [ 1, 2, 3 ]<br>
+              my_array.each { | num | num + 1 }</p>
+
+              <p>Our other super star <span class="ruby">Enumerable</span> method is <span class="ruby">#select</span>.This handy method returns an <span class="ruby">Array</span> or <span class="ruby">Hash</span> containing all elements where a given block returns true. This gives us the ability to select only content we specify to either return or be modified.</p>
+
+              <p class="ruby" style="text-align:center">my_array = [ 1, 2, 3, 4, 5, 6 ]<br>
+              my_array.select { | num | num.even? }<br>
+              [ 2, 4, 6 ]</p>
+
+              <p class="ruby" style="text-align:center">my_hash = { "Paul" => "male", "Ana" => "female", "Mike" => "male" }<br>
+              my_hash.select { | name, gender | gender == "female" }<br>
+              {"Ana" => "female"}</p>
+
+              <p>This gives us only a small taste of all we can do with <span class="ruby">Enumerable</span> methods. The mixin offers colection classes such as <span class="ruby">Array</span> and <span class="ruby">Hash</span> methods for traversing,searching, and sorting elements. For more <span class="ruby">Enumerable</span> methods take a look at <a href="http://ruby-doc.org/core-2.2.3/Enumerable.html#method-i-map">Ruby-docs</a> and try taking a few others for a test drive.</p>
+
+
+              <footer>
+                <a class="button" href="index.html#middle">Checkout Other Posts</a>
+              </footer>
+            </article>
+          </section>
+        </main>
+      </div>
+    </div>
+
+<!--footer-->
+    <footer class="main-footer">
+      <div class="row">
+        <div class="col-12">
+          <nav class="footer-nav">
+            <h1 class="hidden">Main Navigation</h1>
+            <ul>
+              <li><a href="#">Projects</a></li>
+              <li><a href="index.html#middle">Blog</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="../contact.html#middle">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2 col-offset-5">
+          <a href="../index.html"><img src="../imgs/bz-13-logo-full-size-inverse.png" alt=""/></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <section class="copright">
+            <p>© 2015 Bruno Zatta</p>
+          </section>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

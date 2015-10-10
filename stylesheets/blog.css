@@ -15,12 +15,17 @@ blog post
   text-indent: 2rem;
 }
 
-.blog-post a {
+.blog-post .button {
   text-decoration: none;
   font-size: .75rem;
   background: #00AEEF;
   color: #fff;
   padding: .75rem 1rem;
+}
+
+.blog-post a {
+  text-decoration: none;
+  color: #00AEEF;
 }
 
 #box-model-content {
@@ -31,6 +36,13 @@ blog post
   margin: 0 -2rem 0 -2rem;
   padding: 2rem;
   border: 1px solid #323232;
+}
+
+.ruby {
+  border: 1px solid black;
+  background: #F2F2F2;
+  padding: .1rem .2rem;
+  font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream, Vera Sans Mono, Courier New;
 }
 
 /********************
