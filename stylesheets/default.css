@@ -361,6 +361,16 @@ form {
 }
 
 /********************
+about
+********************/
+.about {
+  padding: .5rem 2rem 2rem 2rem;
+  width: 90%;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/********************
 desktop
 ********************/
 @media only screen and (min-device-width: 730px) {
@@ -602,6 +612,15 @@ Contact
     height: 10rem;
   }
 
+/********************
+about
+********************/
+  .about {
+    padding: .5rem 2rem 2rem 2rem;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+  }
 }
 
 
