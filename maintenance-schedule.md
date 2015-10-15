@@ -10,12 +10,6 @@ Create css template for adding code snippets syntax highlighting.
 Restructure default css.
 2 hours
 
-Design and fill content for "about me" page.
-2 hours
-
-Design and fill content for "contact me" page.
-2 hours
-
 Add content for "current" and "future projects" sections.
 1 hour
 
