@@ -27,6 +27,15 @@ html, body {
   display: none;
 }
 
+.button {
+  border: none;
+  margin: .5rem .25rem;
+  text-decoration: none;
+  font-size: .75em;
+  background: #00AEEF;
+  color: #fff;
+  padding: .75rem 1rem;
+}
 /********************
 main-header
 ********************/
@@ -350,15 +359,6 @@ form {
   height: 20rem;
 }
 
-.button {
-  border: none;
-  margin: .5rem .25rem;
-  text-decoration: none;
-  font-size: .75em;
-  background: #00AEEF;
-  color: #fff;
-  padding: .75rem 1rem;
-}
 
 /********************
 about
@@ -368,8 +368,12 @@ about
   width: 90%;
   margin: 0 auto;
   background: #fff;
+  text-align: center;
 }
 
+.about img {
+  width: 82%;
+}
 /********************
 desktop
 ********************/
