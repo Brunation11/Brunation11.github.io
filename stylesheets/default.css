@@ -374,6 +374,29 @@ about
   width: 100%;
 }
 
+/********************
+projects
+********************/
+.project-preview {
+  width: 90%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 4rem;
+  text-align: center;
+}
+
+.projects-thumb {
+  width: 100%;
+}
+
+.project-header {
+  text-align: left;
+}
+
+.project-header h2 {
+  font-size: .75rem;
+  text-align: left;
+}
 
 /********************
 desktop
@@ -625,6 +648,15 @@ about
     width: 100%;
     margin: 0 auto;
     background: #fff;
+  }
+
+/********************
+projects
+********************/
+  .project-preview {
+    width: 100%;
+    padding: 1rem;
+    height: 45.5rem;
   }
 }
 
