@@ -1,0 +1,176 @@
+<DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bruno Zatta | Graphic & Web Designer</title>
+    <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+    <meta name="description" content="Personal portfolio site of Bruno Zatta, Graphic & Web Designer">
+    <meta name="viewport" width="device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+  </head>
+
+<!--logo and page tagline-->
+    <header class="main-header">
+      <div class="row">
+        <div class="col-12 img">
+          <a href="../index.html"><img id="black" src="../imgs/bz-13-logo-full-size.png" alt=""/></a>
+          <a href="../index.html"><img id="white" src="../imgs/bz-13-logo-full-size-inverse.png" alt=""/></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h1>Part-time Designer, Full-time <span>Creative.</span></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+<!--main-nav-->
+          <nav class="main-nav">
+            <h1 class="hidden">Main Navigation</h1>
+            <ul>
+              <li><a href="../projects/index.html#middle">Projects</a></li>
+              <li class="current"><a href="index.html#middle">Blog</a></li>
+              <li><a href="../about.html#middle">About</a></li>
+              <li><a href="../contact.html#middle">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="row nav-arrow hidden">
+        <div class="col-12">
+          <a href="#middle"><img src="../imgs/navigation-arrow.png" alt=""/></a>
+        </div>
+      </div>
+    </header>
+
+<!--sidebar and main content-->
+    <div class="row sidebar-main">
+<!--main-nav and social media-->
+      <div class="col-3 col-offset-1 sidebar">
+<!--social media-->
+        <section class="social-media">
+          <header class="hidden">
+            <h1 class="hidden">Stalk Bruno Zatta</h1>
+          </header>
+          <ul>
+            <li><a href="mailto:bzatta@gmail.com"><img src="../imgs/email-icon.png" alt="bzatta@gmail.com"/></a></li>
+            <li><a href="https://github.com/Brunation11"><img src="../imgs/github-icon.png" alt="GitHub"/></a></li>
+            <li><a href="https://www.linkedin.com/pub/bruno-zatta/83/973/865"><img src="../imgs/linkedin-icon.png" alt="LinkedIn"/></a></li>
+            <li><a href="https://twitter.com/brunation11"><img src="../imgs/twitter-icon.png" alt="Twitter"/></a></li>
+          </ul>
+        </section>
+<!--In Progress-->
+        <section class="projects">
+          <header class="projects-header">
+            <h2>Currently Working On</h2>
+          </header>
+          <ul>
+            <li>current project</li>
+            <a href="#">Read About It</a>
+            <li>current project</li>
+            <a href="#">Read About It</a>
+          </ul>
+        </section>
+<!--Planned Projects-->
+        <section class="projects">
+          <header class="projects-header">
+            <h2>Future Projects</h2>
+          </header>
+          <ul>
+            <li>planned project</li>
+            <a href="#">Read About It</a>
+            <li>planned project</li>
+            <a href="#">Read About It</a>
+          </ul>
+        </section>
+      </div>
+<!--Main content for the page. Contains all blog posts-->
+      <div class="col-7">
+        <main id="middle">
+          <section class="content">
+            <article class="blog-post">
+              <header class="blog-header">
+                <h1>Is a Hash Just an Object?</h1>
+                <h2>Ruby Hashes vs JavaScript Objects</h2>
+                <time class="date" datetime="2015-10-22">October 22, 2015</time>
+              </header>
+                <p>You never realize how much you actually know until you stumble across something new. It’s week-7 of DBC and we just got our first taste of JavaScript. Having a good foundation in Ruby helped immensely with the logic. It’s like I said, you don’t realize how much you know until you stumble across something new, and JavaScript was definitely something new.</p>
+
+                <p>The great part about JavaScript and basically any programming language is that the logic isn’t all that different. In fact one of the biggest similarities in their fundamentals is how similar Ruby hashes are to JavaScript objects.</p>
+
+                <p>To put it simply, a <span class=”ruby”>Hash</span> in Ruby is just a container that can store elements. Elements in a <span class=”ruby”>Hash</span> aren’t stored in any particular order though in newer versions of Ruby hashes do remember the order that elements were added in. These elements are stored in <span class=”ruby”>Key</span> <span class=”ruby”>Value</span> pairs where by referencing the <span class=”ruby”>Key</span> our <span class=”ruby”>Hash</span> can return its <span class=”ruby”>Value</span> pair.</p>
+
+                <p class="ruby" style="padding-left: 1rem; text-indent: 0">
+                state_abreviations = {<br>
+                "New York" => "NY",<br>
+                "New Jersey" => "NJ",<br>
+                "Pennsylvania" => "PA",<br>
+                "Virginia => "VA",<br>
+                "North Carolina" => "NC",<br>
+                "South Carolina" => "SC",<br>
+                }<br>
+                <br>
+                puts state_abreviations["New York"]
+                <br>
+                :> NY
+                end</p>
+
+                <p>So we can see that a <span class=”ruby”>Hash</span> is a container and that we can reference a <span class=”ruby”>Key</span> and have it’s <span class=”ruby”>Value</span> returned. If it seems simple that’s because it actually is. While the syntax might look a bit different an <span class=”ruby”>Object</span> in JavaScript works just about the same. Objects in JavaScript can be created just like hashes in Ruby. We call this literal notation, meaning that we define a variable name and set it equal to a pair of curly brackets <span class=”ruby”>{ }</span> with our <span class=”ruby”>Key</span> <span class=”ruby”>Value</span> pairs nested inside. While in Ruby we simply refer to these pairs as <span class=”ruby”>Key</span> <span class=”ruby”>Value</span> pairs, JavaScript refers to them as properties. If we wanted to retrieve the <span class=”ruby”>Value</span> from a <span class=”ruby”>Property</span> in our object we would reference the <span class=”ruby”>Property</span> just like referencing a <span class=”ruby”>Key</span> in Ruby.</p>
+
+                <p class="ruby" style="padding-left: 1rem; text-indent: 0">
+                stateAbreviations = {<br>
+                New York: "NY",<br>
+                New Jersey: "NJ",<br>
+                Pennsylvania: "PA",<br>
+                Virginia: "VA",<br>
+                North Carolina: "NC",<br>
+                South Carolina: "SC",<br>
+                };<br>
+                <br>
+                console.log(state_abreviations["New York"]);
+                <br>
+                :> NY
+                end</p>
+
+                <p>One thing is for sure; there are many different programming languages each with their own unique syntax. Lucky for us the logic we pick up along the way can always be applied to learning something new. Ruby hashes and JavaScript objects are a great example and while they each have their differences, they are more alike than we think.</p>
+              <footer>
+                <a class=button href="index.html#middle">Checkout Other Posts</a>
+              </footer>
+            </article>
+          </section>
+        </main>
+      </div>
+    </div>
+
+<!--footer-->
+    <footer class="main-footer">
+      <div class="row">
+        <div class="col-12">
+          <nav class="footer-nav">
+            <h1 class="hidden">Main Navigation</h1>
+            <ul>
+              <li><a href="../projects/index.html#middle">Projects</a></li>
+              <li><a href="index.html#middle">Blog</a></li>
+              <li><a href="../about.html#middle">About</a></li>
+              <li><a href="../contact.html#middle">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2 col-offset-5">
+          <a href="../index.html"><img src="../imgs/bz-13-logo-full-size-inverse.png" alt=""/></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <section class="copright">
+            <p>© 2015 Bruno Zatta</p>
+          </section>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
