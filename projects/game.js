@@ -293,7 +293,7 @@ var playGame = function() {
     document.getElementById("winner").innerHTML = (winMessage);
 };
 
-playGame();
+
 // Reflection
 /*
 What was the most difficult part of this challenge?
