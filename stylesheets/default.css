@@ -215,6 +215,11 @@ content
   text-align: left;
 }
 
+.featured-content h2 {
+  font-size: .75rem;
+  text-align: left;
+}
+
 .featured-content p {
   margin-bottom: 2rem;
   text-align: left;
