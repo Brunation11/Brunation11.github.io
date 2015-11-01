@@ -13,10 +13,5 @@ Restructure default css.
 Add content for "current" and "future projects" sections.
 1 hour
 
-Update icon pack for social media.
-30 minutes
-
-Add Behance, Google+, and Pinterest links to social media section.
-30 minutes
 
 
