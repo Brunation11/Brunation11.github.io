@@ -1,0 +1,257 @@
+<DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bruno Zatta | Graphic & Web Designer</title>
+    <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css">
+    <meta name="description" content="Personal portfolio site of Bruno Zatta, Graphic & Web Designer">
+    <meta name="viewport" width="device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+  </head>
+
+<!--logo and page tagline-->
+    <header class="main-header">
+      <div class="row">
+        <div class="col-12 img">
+          <a href="../index.html"><img id="black" src="../imgs/bz-13-logo-full-size.png" alt=""/></a>
+          <a href="../index.html"><img id="white" src="../imgs/bz-13-logo-full-size-inverse.png" alt=""/></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h1>Part-time Designer, Full-time <span>Creative.</span></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+<!--main-nav-->
+          <nav class="main-nav">
+            <h1 class="hidden">Main Navigation</h1>
+            <ul>
+              <li><a href="../projects/index.html#middle">Projects</a></li>
+              <li class="current"><a href="index.html#middle">Blog</a></li>
+              <li><a href="../about.html#middle">About</a></li>
+              <li><a href="../contact.html#middle">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="row nav-arrow hidden">
+        <div class="col-12">
+          <a href="#middle"><img src="../imgs/navigation-arrow.png" alt=""/></a>
+        </div>
+      </div>
+    </header>
+
+<!--sidebar and main content-->
+    <div class="row sidebar-main">
+<!--main-nav and social media-->
+      <div class="col-3 col-offset-1 sidebar">
+<!--social media-->
+        <section class="social-media">
+          <header class="hidden">
+            <h1 class="hidden">Stalk Bruno Zatta</h1>
+          </header>
+          <ul>
+            <li><a href="mailto:bzatta@gmail.com"><img src="../imgs/email-icon.png" alt="bzatta@gmail.com"/></a></li>
+            <li><a href="https://github.com/Brunation11"><img src="../imgs/github-icon.png" alt="GitHub"/></a></li>
+            <li><a href="https://www.linkedin.com/pub/bruno-zatta/83/973/865"><img src="../imgs/linkedin-icon.png" alt="LinkedIn"/></a></li>
+            <li><a href="https://twitter.com/brunation11"><img src="../imgs/twitter-icon.png" alt="Twitter"/></a></li>
+          </ul>
+        </section>
+<!--In Progress-->
+        <section class="projects">
+          <header class="projects-header">
+            <h2>Currently Working On</h2>
+          </header>
+          <ul>
+            <li>current project</li>
+            <a href="#">Read About It</a>
+            <li>current project</li>
+            <a href="#">Read About It</a>
+          </ul>
+        </section>
+<!--Planned Projects-->
+        <section class="projects">
+          <header class="projects-header">
+            <h2>Future Projects</h2>
+          </header>
+          <ul>
+            <li>planned project</li>
+            <a href="#">Read About It</a>
+            <li>planned project</li>
+            <a href="#">Read About It</a>
+          </ul>
+        </section>
+      </div>
+<!--Main content for the page. Contains all blog posts-->
+      <div class="col-7">
+        <main id="middle">
+          <section class="content">
+            <article class="blog-post">
+              <header class="blog-header">
+                <h1>Regex Match and Replace</h1>
+                <h2>Intro to Regular expressions</h2>
+                <time class="date" datetime="2015-11-01">November 01, 2015</time>
+              </header>
+              <p>As week-8 ends we’re one step closer to the end of phase-0 and the start of DBC’s onsite curriculum. We’ve covered numerous topics and even had our stints with Ruby and JavaScript and while nothing compares to learning the basics there are some more advanced concepts that we haven’t touched on.</p>
+
+              <p>In Computer science, pattern matching is the act of checking a given sequence for components of a specified pattern. Imagine using a method like <span class="ruby">each</span> in Ruby and passing a block that checks if a variable matches a specific parameter. Some uses for pattern matching include returning the index of a match, the match itself, or to substitute the match also known as search and replace.</p>
+
+              <p>One such method of pattern matching is through the use of regular expressions; also know as regex or regexp. Regular expressions are sequences of characters that define search parameters for pattern matching. In the 1950’s Stephen Kleene, an American mathematician, defined what’s referred to as a regular language which is expressed through the use of strings or symbols and is constrained by the rules that govern it. It originally came into use with the Unix text processing utilities through the line editor ed, and the command line utility, grep.</p>
+
+              <p>While this may all sound very technical and somewhat of a hassle it is in fact worth the trouble. Many programming languages including the ones we’ve covered so far here during phase-0 of DBC have regular expression capabilities. While some languages have these built in like in Ruby and JavaScript, others such as Java and Python require a standard library for their regular expression capabilities.</p>
+
+              <p>The way pattern matching works in regular expressions is that each character is interpreted as a Meta character, a character with special meaning, or as a regular character with it’s literal meaning. In combination these characters make up a language base designed specifically to represent target patterns in a concise and flexible way.</p>
+
+              <p>Lets take a look at the basic concepts. The following operations can be used to construct most regular expressions. A <span class="ruby">Boolean</span> can be used to match alternatives and is represented by a vertical bar. For example, <span class="ruby">gray|grey</span> can match “their”, “there”, or “they’re”. More complex regular expressions are evaluated like basic arithmetic in a parenthesis is used to denote the precedence of operators. The pattern <span class="ruby">gr(a|e)y</span> is the same as our <span class="ruby">Boolean</span> example. A quantifier is another attribute of regular expressions and is used to specify how often a pattern check is allowed to occur. The three most common include <span class="ruby">?</span> , <span class="ruby">*</span>, and <span class="ruby">+</span>.</p>
+
+              <p><span class="ruby">?</span> indicates zero or one occurrences <span class="ruby">bike?r</span> matches both “bike” and “biker.</p>
+
+              <p><span class="ruby">*</span> matches zero or more occurrences <span class="ruby">ab*c</span> matches “ac”, “abc”, “abbc”, and so on.</p>
+
+              <p><span class="ruby">+</span> matches one or more occurrences <span class="ruby">ab+c</span> matches “abc”, “abbc”, “abbbc”, and so on.</p>
+
+              <p>Some other useful quantifiers include <span class="ruby">{n}</span>, <span class="ruby">{min, }</span>, and <span class="ruby">{min,max}</span>.</p>
+
+              <p><span class="ruby">{n}</span> matches exactly n times.</p>
+
+              <p><span class="ruby">{min,}</span> matches min or more times.</p>
+
+              <p><span class="ruby">{min,max}</span> matches at least min but no more than max times.</p>
+
+              <p>Below is a basic table with some common Meta characters to get you started with regular expressions.  Syntax does vary slightly between languages but we wont touch on that here, just keep in mind that regex has it’s own language base and the special meaning of each Meta character remains the same.</p>
+
+              <table class="ruby">
+                <tr>
+                  <th>Meta Character</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>.</td>
+                  <td>Matches any single character</td>
+                </tr>
+                <tr>
+                  <td>[]</td>
+                  <td>Match any literal character/s incased in them</td>
+                </tr>
+                <tr>
+                  <td>[^ ]</td>
+                  <td>Match any single character not incased in them</td>
+                </tr>
+                <tr>
+                  <td>^</td>
+                  <td>Matches starting position within a string</td>
+                </tr>
+                <tr>
+                  <td>$</td>
+                  <td>Matches ending position within a string</td>
+                </tr>
+                <tr>
+                  <td>( )</td>
+                  <td>Defines a sub expression. Like in basic arithmetic, characters within parenthesis are evaluated first</td>
+                </tr>
+                <tr>
+                  <td>*</td>
+                  <td>Matches the preceding character zero or more times</td>
+                </tr>
+                <tr>
+                  <td>{n}</td>
+                  <td>Matches any single character n times</td>
+                </tr>
+                <tr>
+                  <td>{n, }</td>
+                  <td>Matches any single character n or more times</td>
+                </tr>
+                <tr>
+                  <td>{m, n}</td>
+                  <td>Matches any single character m times and no more than n times</td>
+                </tr>
+                <tr>
+                  <td>...</td>
+                  <td>Denotes a set of character matches</td>
+                </tr>
+                <tr>
+                  <td>|</td>
+                  <td>Seperates alternate possibilities</td>
+                </tr>
+                <tr>
+                  <td>\w</td>
+                  <td>Matches any alphanumeric character</td>
+                </tr>
+                <tr>
+                  <td>\W</td>
+                  <td>Matches any non-alphanumeric character</td>
+                </tr>
+                <tr>
+                  <td>\s</td>
+                  <td>Matches a whitespace character</td>
+                </tr>
+                <tr>
+                  <td>\S</td>
+                  <td>Matches anything but a whitespace</td>
+                </tr>
+                <tr>
+                  <td>\d</td>
+                  <td>Matches a digit</td>
+                </tr>
+                <tr>
+                  <td>.\D</td>
+                  <td>Matches a non-digit</td>
+                </tr>
+                <tr>
+                  <td>\A</td>
+                  <td>Matches the beginning of a string</td>
+                </tr>
+                <tr>
+                  <td>\Z</td>
+                  <td>Matches the end of a string</td>
+                </tr>
+                <tr>
+                  <td>[^...]</td>
+                  <td>Matches every character except the ones in the brackets</td>
+                </tr>
+              </table>
+              <br>
+              <br>
+              <footer>
+                <a class=button href="index.html#middle">Checkout Other Posts</a>
+              </footer>
+            </article>
+          </section>
+        </main>
+      </div>
+    </div>
+
+<!--footer-->
+    <footer class="main-footer">
+      <div class="row">
+        <div class="col-12">
+          <nav class="footer-nav">
+            <h1 class="hidden">Main Navigation</h1>
+            <ul>
+              <li><a href="../projects/index.html#middle">Projects</a></li>
+              <li><a href="index.html#middle">Blog</a></li>
+              <li><a href="../about.html#middle">About</a></li>
+              <li><a href="../contact.html#middle">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2 col-offset-5">
+          <a href="../index.html"><img src="../imgs/bz-13-logo-full-size-inverse.png" alt=""/></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <section class="copright">
+            <p>© 2015 Bruno Zatta</p>
+          </section>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
