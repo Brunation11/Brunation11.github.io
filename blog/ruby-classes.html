@@ -68,9 +68,9 @@
           </header>
           <ul>
             <li>current project</li>
-            <a href="#">Read About It</a>
+            <a class="button" href="#">Read About It</a>
             <li>current project</li>
-            <a href="#">Read About It</a>
+            <a class="button" href="#">Read About It</a>
           </ul>
         </section>
 <!--Planned Projects-->
@@ -80,142 +80,140 @@
           </header>
           <ul>
             <li>planned project</li>
-            <a href="#">Read About It</a>
+            <a class="button" href="#">Read About It</a>
             <li>planned project</li>
-            <a href="#">Read About It</a>
+            <a class="button" href="#">Read About It</a>
           </ul>
         </section>
       </div>
 <!--Main content for the page. Contains all blog posts-->
       <div class="col-7">
-        <main id="middle">
-          <section class="content">
-            <article class="blog-post">
-              <header class="blog-header">
-                <h1>The Making of...</h1>
-                <h2>Defining Concepts With Ruby Classes</h2>
-                <time class="date" datetime="2015-10-13">October 13, 2015</time>
-              </header>
-                <p class="ruby" style="padding-left: 1rem; text-indent: 0">
-                class Dog<br>
-                &nbsp;def initialize(name, age, color)<br>
-                &nbsp;&nbsp;@name = name<br>
-                &nbsp;&nbsp;@age = age<br>
-                &nbsp;&nbsp;@color = color<br>
-                &nbsp;end<br>
-                <br>
-                &nbsp;def my_name_is<br>
-                &nbsp;&nbsp;@name<br>
-                &nbsp;end<br>
-                <br>
-                &nbsp;def my_age_is<br>
-                &nbsp;&nbsp;@age<br>
-                &nbsp;end<br>
-                <br>
-                &nbsp;def my_color_is<br>
-                &nbsp;&nbsp;@color<br>
-                &nbsp;end<br>
-                end<br></p>
+        <main class="main-content" id="middle">
+          <article class="content">
+            <header class="content-header">
+              <h1>The Making of...</h1>
+              <h2 class="content-sub-header">Defining Concepts With Ruby Classes</h2>
+              <time class="date" datetime="2015-10-13">October 13, 2015</time>
+            </header>
+            <p class="ruby" style="padding-left: 1rem; text-indent: 0">
+            class Dog<br>
+            &nbsp;def initialize(name, age, color)<br>
+            &nbsp;&nbsp;@name = name<br>
+            &nbsp;&nbsp;@age = age<br>
+            &nbsp;&nbsp;@color = color<br>
+            &nbsp;end<br>
+            <br>
+            &nbsp;def my_name_is<br>
+            &nbsp;&nbsp;@name<br>
+            &nbsp;end<br>
+            <br>
+            &nbsp;def my_age_is<br>
+            &nbsp;&nbsp;@age<br>
+            &nbsp;end<br>
+            <br>
+            &nbsp;def my_color_is<br>
+            &nbsp;&nbsp;@color<br>
+            &nbsp;end<br>
+            end<br></p>
 
-                <p>Here we have a simple class that defines the concept of our pet dog and just like any dog ours will have a name, an age, and a color. In Ruby concepts are often defined through data structures known as classes. They are collections of all the attributes and methods their concepts have. Even our dog has been given a name, age, and color attribute.</p>
+            <p>Here we have a simple class that defines the concept of our pet dog and just like any dog ours will have a name, an age, and a color. In Ruby concepts are often defined through data structures known as classes. They are collections of all the attributes and methods their concepts have. Even our dog has been given a name, age, and color attribute.</p>
 
-                <p>We've created a very basic concept of our pet dog, but classes aren't simply defined once. Our pup has the potential to grow and if we choose to we can give it other attributes such as gender or size or even breed. Basically anything that would define a real pup can be given to our dog class.</p>
+            <p>We've created a very basic concept of our pet dog, but classes aren't simply defined once. Our pup has the potential to grow and if we choose to we can give it other attributes such as gender or size or even breed. Basically anything that would define a real pup can be given to our dog class.</p>
 
-                <p class="ruby" style="padding-left: 1rem; text-indent: 0;">class Dog<br>
-                &nbsp;def initialize(name, age, color)</p>
+            <p class="ruby" style="padding-left: 1rem; text-indent: 0;">class Dog<br>
+            &nbsp;def initialize(name, age, color)</p>
 
-                <p>While this may sound a little confusing, it's actually quite simple and it's also the basis for our dog. We first define a class Dog, we do so by first declaring <span class="ruby">class</span> followed by the name of our class capitalized. We then can predefine some attributes for our pup and here we've chosen name, age, and color. Our first pup might look something like this.</p>
+            <p>While this may sound a little confusing, it's actually quite simple and it's also the basis for our dog. We first define a class Dog, we do so by first declaring <span class="ruby">class</span> followed by the name of our class capitalized. We then can predefine some attributes for our pup and here we've chosen name, age, and color. Our first pup might look something like this.</p>
 
-                <p class="ruby" style="padding-left: 1rem; text-indent: 0;">our_first_pup = Dog.new("Fluffy", 1, "white")</p>
+            <p class="ruby" style="padding-left: 1rem; text-indent: 0;">our_first_pup = Dog.new("Fluffy", 1, "white")</p>
 
-                <p>Here we have a variable <span class="ruby">our_first_pup</span> and we've set it to <span class="ruby">Dog.new</span> What this does is create a new instance of our Dog class. As you can see we then passed in a name, a number for age, and our pups color. Seems simple enough right?</p>
+            <p>Here we have a variable <span class="ruby">our_first_pup</span> and we've set it to <span class="ruby">Dog.new</span> What this does is create a new instance of our Dog class. As you can see we then passed in a name, a number for age, and our pups color. Seems simple enough right?</p>
 
-                <p class="ruby" style="padding-left: 1rem; text-indent: 0;">class Dog<br>
-                &nbsp;def initialize(name, age, color)<br>
-                &nbsp;&nbsp;@name = name<br>
-                &nbsp;&nbsp;@age = age<br>
-                &nbsp;&nbsp;@color = color<br>
-                &nbsp;end</p>
+            <p class="ruby" style="padding-left: 1rem; text-indent: 0;">class Dog<br>
+            &nbsp;def initialize(name, age, color)<br>
+            &nbsp;&nbsp;@name = name<br>
+            &nbsp;&nbsp;@age = age<br>
+            &nbsp;&nbsp;@color = color<br>
+            &nbsp;end</p>
 
-                <p>We've seen how initialize can have some pre-set attributes for our pet but what if we wanted to use these attributes somewhere else. For example what if we wanted a way to print our dogs name or age or color. We would need to use instance variables. An instance variable is created just like a local variable but is prefixed with an <span class="ruby">@</span>. The main difference between the two is that while a local variable is defined and used within one method, an instance variable can be used through out all the methods of a class wherever it may be needed.</p>
+            <p>We've seen how initialize can have some pre-set attributes for our pet but what if we wanted to use these attributes somewhere else. For example what if we wanted a way to print our dogs name or age or color. We would need to use instance variables. An instance variable is created just like a local variable but is prefixed with an <span class="ruby">@</span>. The main difference between the two is that while a local variable is defined and used within one method, an instance variable can be used through out all the methods of a class wherever it may be needed.</p>
 
-                <p class="ruby" style="padding-left: 1rem; text-indent: 0;">
-                def initialize(name, age, color)<br>
-                &nbsp;@name = name<br>
-                &nbsp;@age = age<br>
-                &nbsp;@color = color<br>
-                end<br>
-                <br>
-                def my_name_is<br>
-                &nbsp;@name<br>
-                end<br>
-                <br>
-                def my_age_is<br>
-                &nbsp;@age<br>
-                end<br>
-                <br>
-                def my_color_is<br>
-                &nbsp;@color<br>
-                end<br></p>
+            <p class="ruby" style="padding-left: 1rem; text-indent: 0;">
+            def initialize(name, age, color)<br>
+            &nbsp;@name = name<br>
+            &nbsp;@age = age<br>
+            &nbsp;@color = color<br>
+            end<br>
+            <br>
+            def my_name_is<br>
+            &nbsp;@name<br>
+            end<br>
+            <br>
+            def my_age_is<br>
+            &nbsp;@age<br>
+            end<br>
+            <br>
+            def my_color_is<br>
+            &nbsp;@color<br>
+            end<br></p>
 
-                <p>So we have our new pup and we've given it a name, age, and color. Now we want to be able to print this information out. Well we can do so by creating different methods or actions for our pup. We have three different methods here but as you can see they're all meant to return one of our attributes. Since these are three different methods and initialize is a method in itself we needed a way to get our pups name, age, and color into these new methods. We did so using instance variables. Take a look in our initialize method we created instance variables and assigned them our attributes. Note that it's good practice to keep the names the same in order to avoid any confusion when we get to some more advanced class structures.<p>
+            <p>So we have our new pup and we've given it a name, age, and color. Now we want to be able to print this information out. Well we can do so by creating different methods or actions for our pup. We have three different methods here but as you can see they're all meant to return one of our attributes. Since these are three different methods and initialize is a method in itself we needed a way to get our pups name, age, and color into these new methods. We did so using instance variables. Take a look in our initialize method we created instance variables and assigned them our attributes. Note that it's good practice to keep the names the same in order to avoid any confusion when we get to some more advanced class structures.<p>
 
-                <p class="ruby" style="padding-left: 1rem; text-indent: 0;">
-                our_first_pup = Dog.new("Fluffy", 1, "white")<br>
-                puts our_first_pup.my_name_is<br>
-                puts our_first_pup.my_age_is<br>
-                puts our_first_pup.my_color_is<br>
-                <br>
-                Fluffy<br>
-                1<br>
-                white</p>
+            <p class="ruby" style="padding-left: 1rem; text-indent: 0;">
+            our_first_pup = Dog.new("Fluffy", 1, "white")<br>
+            puts our_first_pup.my_name_is<br>
+            puts our_first_pup.my_age_is<br>
+            puts our_first_pup.my_color_is<br>
+            <br>
+            Fluffy<br>
+            1<br>
+            white</p>
 
-                <p>Looks like our new puppy is really coming to life. Now remember classes are collections of a concept’s attributes as well as it's actions. So we've given our pup some attributes how about we teach him a trick?</p>
+            <p>Looks like our new puppy is really coming to life. Now remember classes are collections of a concept’s attributes as well as it's actions. So we've given our pup some attributes how about we teach him a trick?</p>
 
-                <p class="ruby" style="padding-left: 1rem; text-indent: 0;">
-                def bark<br>
-                &nbsp;puts "WOOF!<br>
-                end</p>
+            <p class="ruby" style="padding-left: 1rem; text-indent: 0;">
+            def bark<br>
+            &nbsp;puts "WOOF!<br>
+            end</p>
 
-                <p>So we taught our pup a new trick to bark on command. We did so by creating a new method bark that prints "WOOF!" to the screen. Lets see our pup in action.</p>
+            <p>So we taught our pup a new trick to bark on command. We did so by creating a new method bark that prints "WOOF!" to the screen. Lets see our pup in action.</p>
 
-                <p class="ruby" style="padding-left: 1rem; text-indent: 0;">
-                our_first_pup.bark<br>
-                WOOF!</p>
+            <p class="ruby" style="padding-left: 1rem; text-indent: 0;">
+            our_first_pup.bark<br>
+            WOOF!</p>
 
-                <p>I was kind of worried about his shyness there for a second but he definitely pulled through. It's really that simple, we created a method and assigned some action to it. We then called this method on our pup by using <span class="ruby">#bark</span>.
+            <p>I was kind of worried about his shyness there for a second but he definitely pulled through. It's really that simple, we created a method and assigned some action to it. We then called this method on our pup by using <span class="ruby">#bark</span>.
 
-                <p class="ruby" style="padding-left: 1rem; text-indent: 0">
-                class Dog<br>
-                &nbsp;def initialize(name, age, color)<br>
-                &nbsp;&nbsp;@name = name<br>
-                &nbsp;&nbsp;@age = age<br>
-                &nbsp;&nbsp;@color = color<br>
-                &nbsp;end<br>
-                <br>
-                &nbsp;def my_name_is<br>
-                &nbsp;&nbsp;@name<br>
-                &nbsp;end<br>
-                <br>
-                &nbsp;def my_age_is<br>
-                &nbsp;&nbsp;@age<br>
-                &nbsp;end<br>
-                <br>
-                &nbsp;def my_color_is<br>
-                &nbsp;&nbsp;@color<br>
-                &nbsp;end<br>
-                <br>
-                &nbsp;def bark<br>
-                &nbsp;&nbsp;puts "WOOF!"<br>
-                &nbsp;end<br>
-                end</p>
+            <p class="ruby" style="padding-left: 1rem; text-indent: 0">
+            class Dog<br>
+            &nbsp;def initialize(name, age, color)<br>
+            &nbsp;&nbsp;@name = name<br>
+            &nbsp;&nbsp;@age = age<br>
+            &nbsp;&nbsp;@color = color<br>
+            &nbsp;end<br>
+            <br>
+            &nbsp;def my_name_is<br>
+            &nbsp;&nbsp;@name<br>
+            &nbsp;end<br>
+            <br>
+            &nbsp;def my_age_is<br>
+            &nbsp;&nbsp;@age<br>
+            &nbsp;end<br>
+            <br>
+            &nbsp;def my_color_is<br>
+            &nbsp;&nbsp;@color<br>
+            &nbsp;end<br>
+            <br>
+            &nbsp;def bark<br>
+            &nbsp;&nbsp;puts "WOOF!"<br>
+            &nbsp;end<br>
+            end</p>
 
-                <p>It may seem fairly simple now and if it does, well congratulation you now have a better understanding of Ruby classes. Almost everything in real life exists in a similar structure to our class. A dog has attributes and features and can perform certain actions. It can belong to a class dog, which in turn belongs to a class pet, which is an animal that exists as a an object in the universe just like an instance of our dog class exists as an object in a hierarchy of classes in Ruby.</p>
-              <footer>
-                <a class=button href="index.html#middle">Checkout Other Posts</a>
-              </footer>
-            </article>
-          </section>
+            <p>It may seem fairly simple now and if it does, well congratulation you now have a better understanding of Ruby classes. Almost everything in real life exists in a similar structure to our class. A dog has attributes and features and can perform certain actions. It can belong to a class dog, which in turn belongs to a class pet, which is an animal that exists as a an object in the universe just like an instance of our dog class exists as an object in a hierarchy of classes in Ruby.</p>
+            <footer>
+              <a class="button" href="index.html#middle">Checkout Other Posts</a>
+            </footer>
+          </article>
         </main>
       </div>
     </div>

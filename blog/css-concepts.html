@@ -68,9 +68,9 @@
           </header>
           <ul>
             <li>current project</li>
-            <a href="#">Read About It</a>
+            <a class="button" href="#">Read About It</a>
             <li>current project</li>
-            <a href="#">Read About It</a>
+            <a class="button" href="#">Read About It</a>
           </ul>
         </section>
 <!--Planned Projects-->
@@ -80,44 +80,44 @@
           </header>
           <ul>
             <li>planned project</li>
-            <a href="#">Read About It</a>
+            <a class="button" href="#">Read About It</a>
             <li>planned project</li>
-            <a href="#">Read About It</a>
+            <a class="button" href="#">Read About It</a>
           </ul>
         </section>
       </div>
 <!--Main content for the page. Contains all blog posts-->
       <div class="col-7">
-        <main id="middle">
-          <section class="content">
-            <article class="blog-post">
-              <header class="blog-header">
-                <h1>Unboxing The CSS Box Model</h1>
-                <h2>Padding, Borders, and Margins</h2>
-                <time class="date" datetime="2015-09-25">September 25, 2015</time>
-              </header>
-              <br>
-              <img src="../imgs/box-model.png">
-              <br>
-              <p>So it turns out that when timeboxing is suggested on a challenge it would be wise to listen. My journey into CSS was a roller-coaster of a time, it had it's ups and it had its downs but at the end of this week I'm excited to see all the possibilities that come with CSS.</p>
+        <main class="main-content" id="middle">
+          <article class="content">
+            <header class="content-header">
+              <h1>Unboxing The CSS Box Model</h1>
+              <h2 class="content-sub-header">Padding, Borders, and Margins</h2>
+              <time class="date" datetime="2015-09-25">September 25, 2015</time>
+            </header>
+            <br>
+            <img src="../imgs/box-model.png">
+            <br>
+            <p>So it turns out that when timeboxing is suggested on a challenge it would be wise to listen. My journey into CSS was a roller-coaster of a time, it had it's ups and it had its downs but at the end of this week I'm excited to see all the possibilities that come with CSS.</p>
 
-              <p>I came to DBC with a very small bit of CSS knowledge, not necessarily in the syntax but rather the concept of the CSS Box Model. What is the CSS Box Model you ask? Well quite literally it's a visual representation of the relationship between margins, borders, padding and the actual content. A mouth full, I know. So try to think of these parts surrounding an object, like layers on an onion.</p>
+            <p>I came to DBC with a very small bit of CSS knowledge, not necessarily in the syntax but rather the concept of the CSS Box Model. What is the CSS Box Model you ask? Well quite literally it's a visual representation of the relationship between margins, borders, padding and the actual content. A mouth full, I know. So try to think of these parts surrounding an object, like layers on an onion.</p>
 
-              <p>Starting from the outside a margin is the outermost layer in the box model. The margin clears an area around the object's border. When positioning abjects next to one another, the buffer or invisible space between these objects is created by their margins. The higher the value of the margin the greater the buffer.</p>
+            <p>Starting from the outside a margin is the outermost layer in the box model. The margin clears an area around the object's border. When positioning abjects next to one another, the buffer or invisible space between these objects is created by their margins. The higher the value of the margin the greater the buffer.</p>
 
-              <p>Next is the border. The border surrounds the object and any padding. Using css we can stlye the border to be solid, dashed or even dotted lines. We're able to edit the thickness of the border as well as its color. Think of the border as the outermost visible layer of our box model. We say the outermost visible because since our margin acts as a buffer, the border would the first layer that canbe styled visually.
+            <p>Next is the border. The border surrounds the object and any padding. Using css we can stlye the border to be solid, dashed or even dotted lines. We're able to edit the thickness of the border as well as its color. Think of the border as the outermost visible layer of our box model. We say the outermost visible because since our margin acts as a buffer, the border would the first layer that canbe styled visually.
 
-              <p>If you've stayed with me this far than Kudos, you are that much closer to understanding The CSS Box Model! The padding like the margin is like a buffer. Just like the margin this buffer is an invisible space. The difference is that this space is the area surrounding the actual content and rests between the content and the border. Cool huh?</p>
+            <p>If you've stayed with me this far than Kudos, you are that much closer to understanding The CSS Box Model! The padding like the margin is like a buffer. Just like the margin this buffer is an invisible space. The difference is that this space is the area surrounding the actual content and rests between the content and the border. Cool huh?</p>
 
-            <section id="box-model-border">
-              <p id="box-model-content">So we've talked layers and we've talked onions. Analogies though will only get us so far so lets look at a literal application of what we've learned. The text you've been reading so far is our content and it's being contained by tags inside of this white area. If you notice the paragraph never touches any of the sides in the white box it sits in. This is because of the padding that exists between the paragraphs and the border. Think of the border as the end of the white space and our content has a solid black border around it. So we've pointed out our content, the padding surrounding it, and where our border is. The final layer in The CSS Box Model is the margin. If you notice our black border and the paragraph above it, there is a small gap between them. This gap is our margin, just as the gap between our sidebar and the content area is created by adjusting the margins for each of these areas. See if you can spot some other margins on the page.</p>
+          <section id="box-model-border">
+            <p id="box-model-content">So we've talked layers and we've talked onions. Analogies though will only get us so far so lets look at a literal application of what we've learned. The text you've been reading so far is our content and it's being contained by tags inside of this white area. If you notice the paragraph never touches any of the sides in the white box it sits in. This is because of the padding that exists between the paragraphs and the border. Think of the border as the end of the white space and our content has a solid black border around it. So we've pointed out our content, the padding surrounding it, and where our border is. The final layer in The CSS Box Model is the margin. If you notice our black border and the paragraph above it, there is a small gap between them. This gap is our margin, just as the gap between our sidebar and the content area is created by adjusting the margins for each of these areas. See if you can spot some other margins on the page.</p>
             </section>
-              <p>At this point you should now be a padding, border, and margin expert. If this has helped you just keep in mind that it's helped me immensely in putting that theory into practice and learning first hand how each one works in relation to one another and the objects around them. CSS is going to be an ever changing learning experience, but one thing is bound to stay the same, We'll be using padding, borders, and margins for years to come.</p>
-              <footer>
-                <a href="index.html#middle">Checkout Other Posts</a>
-              </footer>
-            </article>
-          </section>
+
+            <p>At this point you should now be a padding, border, and margin expert. If this has helped you just keep in mind that it's helped me immensely in putting that theory into practice and learning first hand how each one works in relation to one another and the objects around them. CSS is going to be an ever changing learning experience, but one thing is bound to stay the same, We'll be using padding, borders, and margins for years to come.</p>
+
+            <footer>
+              <a class="button" href="index.html#middle">Checkout Other Posts</a>
+            </footer>
+          </article>
         </main>
       </div>
     </div>

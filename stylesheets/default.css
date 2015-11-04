@@ -36,6 +36,12 @@ html, body {
   color: #fff;
   padding: .75rem 1rem;
 }
+
+.date {
+  font-size: .75rem;
+  text-align: left;
+}
+
 /********************
 main-header
 ********************/
@@ -116,6 +122,7 @@ main-nav
 .main-nav .current a {
   color: #00AEEF;
 }
+
 /*******************
 social-media
 ********************/
@@ -141,9 +148,6 @@ social-media
   width: 4rem;
 }
 
-/*******************
-projects
-********************/
 .projects {
   text-align: center;
   width: 90%;
@@ -157,7 +161,6 @@ projects
   padding: 0;
 }
 
-
 .projects-header {
   font-size: .75rem;
 }
@@ -167,105 +170,40 @@ projects
   margin: 2.5rem;
 }
 
-.projects a {
-  text-decoration: none;
-  font-size: .75rem;
-  background: #00AEEF;
-  color: #fff;
-  padding: .75rem 1rem;
-}
-
 /*******************
 main
 ********************/
-.featured,
-.featured-content,
-.blog-preview {
+.content {
+  padding: .5rem 2rem 2rem 2rem;
+  text-align: center;
   width: 90%;
   margin: 0 auto;
   background: #fff;
 }
 
-.featured p,
-.featured-content p,
-.blog-preview p {
+.content-header {
+  text-align: left;
+}
+
+.content-sub-header {
+  font-size: .75rem;
+}
+
+.content p {
   text-indent: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
 }
 
-/*******************
-featured
+.content img {
+  width: 100%;
+}
+
+/********************
+projects
 ********************/
-.featured {
-  padding: .5rem 2rem 2rem 2rem;
-}
-
-.featured-header {
-  text-align: center;
-}
-
-/********************
-content
-*********************/
-.featured-content {
-  padding: .5rem 2rem 2rem 2rem;
-  text-align: center;
-}
-
-.featured-content-header {
-  text-align: left;
-}
-
-.featured-content h2 {
-  font-size: .75rem;
-  text-align: left;
-}
-
-.featured-content p {
-  margin-bottom: 2rem;
-  text-align: left;
-}
-
-.featured-content a {
-  text-decoration: none;
-  font-size: .75rem;
-  background: #00AEEF;
-  color: #fff;
-  padding: .75rem 1rem;
-}
-
-/********************
-blog preview
-*********************/
-.blog-preview {
-  padding: .5rem 2rem 2rem 2rem;
-  text-align: center;
-}
-
-.blog-header {
-  text-align: left;
-}
-
-.blog-header h2 {
-  font-size: .75rem;
-  text-align: left;
-}
-
-.date {
-  font-size: .75rem;
-  text-align: left;
-}
-
-.blog-preview p {
-  margin-bottom: 2rem;
-  text-align: left;
-}
-
-.blog-preview a {
-  text-decoration: none;
-  font-size: .75em;
-  background: #00AEEF;
-  color: #fff;
-  padding: .75rem 1rem;
+.projects-thumb {
+  width: 100%;
 }
 
 /********************
@@ -303,53 +241,28 @@ footer-nav
   text-decoration: none;
 }
 
-/********************
-footer logo
-********************/
 .main-footer img {
   width: 100%;
   margin-top: -5rem;
   margin-bottom: -5rem;
 }
 
-/********************
-footer copyright
-********************/
 .copright {
   font-size: .5rem;
   color: #fff;
   text-align: center;
 }
 
-
 /********************
 Contact
 ********************/
-.contact {
-  padding: .5rem 2rem 2rem 2rem;
-  margin: 0 auto;
-  background-color: #fff;
-  width: 90%;
-}
-
-.contact h1 {
-  text-align: center;
-  font-size: 3rem;
-}
-
-.contact p {
-  text-indent: 2rem;
-}
-
 form {
   margin: 0 auto;
   text-align: center;
 
 }
 
-#name,
-#email,
-#message {
+.form-input {
   width: 90%;
   height: 5rem;
   border: none;
@@ -359,48 +272,8 @@ form {
   background: none;
 }
 
-
 #message {
   height: 20rem;
-}
-
-/********************
-about
-********************/
-.about {
-  padding: .5rem 2rem 2rem 2rem;
-  width: 90%;
-  margin: 0 auto;
-  background: #fff;
-  text-align: center;
-}
-
-.about img {
-  width: 100%;
-}
-
-/********************
-projects
-********************/
-.project-preview {
-  width: 90%;
-  margin: 0 auto;
-  background: #fff;
-  padding: 4rem;
-  text-align: center;
-}
-
-.projects-thumb {
-  width: 100%;
-}
-
-.project-header {
-  text-align: left;
-}
-
-.project-header h2 {
-  font-size: .75rem;
-  text-align: left;
 }
 
 /********************
@@ -521,9 +394,6 @@ sidebar
     margin-top: 1.25rem;
   }
 
-/********************
-social-media
-********************/
   .social-media {
     margin-top: 0;
   }
@@ -540,9 +410,6 @@ social-media
     width: 1.5rem;
   }
 
-/*******************
-projects
-********************/
   .projects {
     width: 100%;
     border-top: 1px solid #D3D3D3;
@@ -551,71 +418,28 @@ projects
 /*******************
 main
 ********************/
-  main {
+
+  .main-content {
     margin-top: .25rem;
+    height: 45.5rem;
+    overflow: scroll;
   }
 
-/*******************
-featured, featured-content, blog-preview
-********************/
-  .featured,
-  .featured-content,
-  .blog-preview {
+  .content {
     width: 100%;
   }
 
-/*******************
-blog-preview
-********************/
-
-  .blog-preview {
-    margin-bottom: 1rem;
-  }
-
 /********************
-footer
+projects
 ********************/
-  .main-footer {
-    clear: both;
-    border-top: .75rem solid #00AEEF;
-    padding: 0;
-    height: 20rem;
-  }
-
-
-/********************
-footer-nav
-********************/
-  .footer-nav {
-    font-size: .75rem;
-    margin-top: 2rem;
-  }
-
-  .footer-nav li {
-    padding: .5rem;
-  }
-
-/********************
-footer copyright
-********************/
-  .copright {
-    font-size: .5em;
-  }
-
-/********************
-footer logo
-********************/
-  .main-footer img {
-    margin-top: -2rem;
-    margin-bottom: -2rem;
+  .projects-thumb {
+    width: 80%;
   }
 
 /********************
 Contact
 ********************/
   .contact {
-    margin-top: .4rem;
-    width: 100%;
     background: url("../imgs/contact-bg.png");
     background-size: auto 100%;
   }
@@ -630,12 +454,9 @@ Contact
   .contact p {
     text-indent: 0rem;
     margin-left: 14rem;
-    font-size: 1rem;
   }
 
-  #name,
-  #email,
-  #message {
+  .form-input {
     height: 2rem;
     font-size: .75rem;
     width: 75%;
@@ -646,23 +467,33 @@ Contact
   }
 
 /********************
-about
+footer
 ********************/
-  .about {
-    padding: .5rem 2rem 2rem 2rem;
-    width: 100%;
-    margin: 0 auto;
-    background: #fff;
+  .main-footer {
+    clear: both;
+    border-top: .75rem solid #00AEEF;
+    padding: 0;
+    height: 20rem;
   }
 
-/********************
-projects
-********************/
-  .project-preview {
-    width: 100%;
-    padding: 1rem;
-    height: 45.5rem;
+  .footer-nav {
+    font-size: .75rem;
+    margin-top: 2rem;
   }
+
+  .footer-nav li {
+    padding: .5rem;
+  }
+
+  .copright {
+    font-size: .5em;
+  }
+
+  .main-footer img {
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+  }
+
 }
 
 

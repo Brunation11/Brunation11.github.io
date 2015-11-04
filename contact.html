@@ -68,9 +68,9 @@
           </header>
           <ul>
             <li>current project</li>
-            <a href="#">Read About It</a>
+            <a class="button" href="#">Read About It</a>
             <li>current project</li>
-            <a href="#">Read About It</a>
+            <a class="button" href="#">Read About It</a>
           </ul>
         </section>
 <!--Planned Projects-->
@@ -80,25 +80,26 @@
           </header>
           <ul>
             <li>planned project</li>
-            <a href="#">Read About It</a>
+            <a class="button" href="#">Read About It</a>
             <li>planned project</li>
-            <a href="#">Read About It</a>
+            <a class="button" href="#">Read About It</a>
           </ul>
         </section>
       </div>
 <!--Main content for the page. Contains jumbotron and content area-->
       <div class="col-7">
-        <main class="contact" id="middle">
-          <section>
+        <main class="main-content" id="middle">
+          <section class="content contact">
             <h1>Hey!</h1>
             <p>Believe it or not developers love to hear about your ideas so feel free to reach out. Whether you've got that creative itch that you just can't scratch, or just want to geek out and talk code, it's always awesome to hear from you guys!<p>
+
+            <form action="mail.php" method="POST">
+              <input class="form-input" id="name" type="text" name="name" placeholder="What should I call you?">
+              <input class="form-input" id="email" type="text" name="email" placeholder="Got an email? I promise not to share it!">
+              <textarea class="form-input" id="message" name="message" placeholder="What's on your mind?"></textarea><br />
+              <input class="button" type="submit" value="Send"><input class="button" type="reset" value="Clear">
+            </form>
           </section>
-          <form action="mail.php" method="POST">
-            <input id="name" type="text" name="name" placeholder="What should I call you?">
-            <input id="email" type="text" name="email" placeholder="Got an email? I promise not to share it!">
-            <textarea id="message" name="message" placeholder="What's on your mind?"></textarea><br />
-            <input class="button" type="submit" value="Send"><input class="button" type="reset" value="Clear">
-          </form>
         </main>
       </div>
     </div>
